@@ -3,6 +3,30 @@
     --white: #fff;
     --another-white: #F5F4FA;
     --sky: #2196F3;
-    --black: #212121;
+    --blacked: #212121;
     --grey: #757575;
 }
+@font-face{
+    font-family: "Roboto";
+    font-weight: 400;
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face{
+    font-family: "Roboto";
+    font-weight: 500;
+    src: url("../fonts/Roboto-Medium.ttf");
+}
+@font-face{
+    font-family: "Roboto";
+    font-weight: 700;
+    src: url("../fonts/Roboto-Bold.ttf");
+}
+@font-face{
+    font-family: "Roboto";
+    font-weight: 900;
+    src: url("../fonts/Roboto-Black.ttf");
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+  }
