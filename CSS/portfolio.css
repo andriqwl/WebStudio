@@ -30,8 +30,28 @@
 body{
     font-family: "Roboto", sans-serif;
 }
+.address-email{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--black);
+    text-decoration: none;
+    font-style: normal;
+}
+.address-email:hover{
+    color: var(--sky);
+}
+.address-phone{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--black);
+    text-decoration: none;
+    font-style: normal;
+}
+.address-phone:hover{
+    color: var(--sky);
+}
 .nav-button{
-    font-size: 16;
+    font-size: 16px;
     font-weight: 500;
     letter-spacing: 3%;
     color: var(--black);
@@ -40,13 +60,13 @@ body{
     list-style: none;
 }
 .post-title{
-    font-size: 18;
+    font-size: 18px;
     font-weight: 700;
     letter-spacing: 6%;
     color: var(--black);
 }
 .post-subtitle{
-    font-size: 16;
+    font-size: 16px;
     font-weight: 400;
     letter-spacing: 3%;
     color: var(--grey);
@@ -55,10 +75,21 @@ body{
     background-color: var(--purple);
 }
 .footer-address{
-    font-size: 14;
+    font-size: 14px;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 3%;
     color: var(--white);
     line-height: 1.71;
+}
+.footer-text{
+    color: var(--white);
+}
+.footer-email{
+    text-decoration: none;
+    color: var(--white);
+}
+.footer-phone{
+    text-decoration: none;
+    color: var(--white);
 }
