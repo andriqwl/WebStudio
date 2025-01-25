@@ -30,6 +30,11 @@
 body{
     font-family: "Roboto", sans-serif;
 }
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 .address-email{
     font-size: 14px;
     font-weight: 400;
