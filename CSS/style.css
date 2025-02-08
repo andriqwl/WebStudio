@@ -100,9 +100,8 @@ body {
     text-align: center;
     color: var(--black)
 }
-.our-works-list{
-    list-style: none;
-    display: flex;
+.team-section{
+    background-color: var(--another-white);
 }
 .team-section-title{
     font-size: 36px;
@@ -144,4 +143,26 @@ body {
 .footer-phone{
     text-decoration: none;
     color: var(--white);
+}
+
+/* Flexbox */
+.header-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header{
+    padding: 17px 0;
+}
+.features-list{
+    display: flex;
+}
+.our-works-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.team-list{
+    display: flex;
+    justify-content: center;
 }
