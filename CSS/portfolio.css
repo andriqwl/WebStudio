@@ -42,7 +42,7 @@ body{
 }
 .nav-link{
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     color: var(--black);
     text-decoration: none;
     margin-right: 50px;
@@ -58,8 +58,8 @@ body{
 }
 .address-email{
     font-size: 14px;
-    font-weight: 400;
-    color: var(--black);
+    font-weight: 500;
+    color: var(--grey);
     text-decoration: none;
     font-style: normal;
 }
@@ -68,8 +68,8 @@ body{
 }
 .address-phone{
     font-size: 14px;
-    font-weight: 400;
-    color: var(--black);
+    font-weight: 500;
+    color: var(--grey);
     text-decoration: none;
     font-style: normal;
 }
@@ -82,7 +82,7 @@ body{
 }
 .footer-address{
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     letter-spacing: 0.5px;
     color: var(--white);
@@ -130,7 +130,7 @@ body{
     justify-content: space-between;
 }
 .header{
-    padding: 17 px 0;
+    padding: 14px 0;
     border-bottom: 2px solid rgb(241, 241, 241);
 }
 .footer-wrap{
@@ -193,7 +193,7 @@ figure{
     border-right: 1px solid rgb(241, 241, 241);
 }
 .post-item:nth-child(-n+6){
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 .post-text{
     text-align: start;
