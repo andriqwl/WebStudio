@@ -160,6 +160,19 @@ body{
 .posts-section-list{
     list-style: none;
 }
+.posts-section-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+.post-item{
+    width: calc((100% - 60px)/3);
+}
+.post-img{
+    width: 100%;
+}
 .post-title{
     font-size: 18px;
     font-weight: 700;
@@ -193,7 +206,7 @@ figure{
     border-right: 1px solid rgb(241, 241, 241);
 }
 .post-item:nth-child(-n+6){
-    margin-bottom: 30px;
+    margin-bottom: 0;
 }
 .post-text{
     text-align: start;
