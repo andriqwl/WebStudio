@@ -270,26 +270,26 @@ figure{
     display: inline-block;
     width: 270px;
     height: 120px;
-    background-image: url(../img/Group1.png);
+    background-image: url(./img/Group1.png);
 }
 .features-list-item2::before{
     content: "";
     display: inline-block;
     width: 270px;
     height: 120px;
-    background-image: url(../img/Group2.png);
+    background-image: url(./img/Group2.png);
 }
 .features-list-item3::before{
     content: "";
     display: inline-block;
     width: 270px;
     height: 120px;
-    background-image: url(../img/Group3.png);
+    background-image: url(./img/Group3.png);
 }
 .features-list-item4::before{
     content: "";
     display: inline-block;
     width: 270px;
     height: 120px;
-    background-image: url(../img/Group4.png);
+    background-image: url(./img/Group4.png);
 }
