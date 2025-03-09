@@ -272,26 +272,26 @@ figure{
     display: inline-block;
     width: 270px;
     height: 120px;
-    background-image: url(../img/group1.png);
+    background-image: url(../img/group11.png);
 }
 .features-list-item2::before{
     content: "";
     display: inline-block;
     width: 270px;
     height: 120px;
-    background-image: url(../img/group2.png);
+    background-image: url(../img/group21.png);
 }
 .features-list-item3::before{
     content: "";
     display: inline-block;
     width: 270px;
     height: 120px;
-    background-image: url(../img/group3.png);
+    background-image: url(../img/group31.png);
 }
 .features-list-item4::before{
     content: "";
     display: inline-block;
     width: 270px;
     height: 120px;
-    background-image: url(../img/group4.png);
+    background-image: url(../img/group41.png);
 }
