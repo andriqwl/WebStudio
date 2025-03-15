@@ -47,8 +47,8 @@ body {
     letter-spacing: 2px;
 }
 .main-section{
-    background-color: var(--purple);
-    height: 600px;
+    background-image: url("/img/main.img.gradient.png"),
+                      url("/img/main.background.png");
 }
 .main-section-wrap{
     height: 600px;
