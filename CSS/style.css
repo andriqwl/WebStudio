@@ -49,6 +49,7 @@ body {
 .main-section{
     background-image: url("/img/main.img.gradient.png"),
                       url("/img/main.background.png");
+    background-size: cover, cover;
 }
 .main-section-wrap{
     height: 600px;
