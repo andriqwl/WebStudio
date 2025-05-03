@@ -47,8 +47,8 @@ body {
     letter-spacing: 2px;
 }
 .main-section{
-    background-image: url("../img/main.img.gradient.png"),
-                      url("../img/main.background.png");
+    background-image: url("../img/bg-gradient.png"),
+                      url("../img/bg-office.png");
     background-size: cover, cover; 
 }
 .main-section-wrap{
@@ -85,7 +85,7 @@ body {
     margin-left: auto;
 }
 .adress-link{
-    margin-right: 50px;
+    margin-right: 30px;
     font-weight: 500;
 }
 .address-email{
@@ -95,8 +95,25 @@ body {
     text-decoration: none;
     font-style: normal;
 }
-.address-email:hover{
+.address-email-icon{
+    width: 16px;
+    height: 12px;
+    fill: #AFB1B8;
+    text-align: center;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+.address-phone-icon{
+    width: 10px;
+    height: 16px;
+    fill: #AFB1B8;
+    text-align: center;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+.address-email:hover, .address-email:hover .address-email-icon{
     color: var(--sky);
+    fill: var(--sky);
 }
 .address-phone{
     font-size: 14px;
@@ -105,9 +122,11 @@ body {
     text-decoration: none;
     font-style: normal;
 }
-.address-phone:hover{
+.address-phone:hover, .address-phone:hover .address-phone-icon{
     color: var(--sky);
+    fill: var(--sky);
 }
+
 .features-section{
     margin-top: 94px;
     margin-bottom: 94px;
@@ -183,6 +202,76 @@ body {
     color: var(--grey);
     letter-spacing: 0.5px;
 }
+.team-member-social-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    padding-bottom: 35px;
+}
+.team-member-social:not(:last-child) {
+    margin-right: 10px; 
+}
+.social-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+.team-member-social-icon {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+.social-icon-wrapper:hover {
+    background-color: #2196F3;
+}
+.social-icon-wrapper:hover .team-member-social-icon {
+    fill: #FFFFFF;
+}
+.customers-title{
+    margin: 0px;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--black);
+    letter-spacing: 1px;
+    margin-top: 94px;
+    margin-bottom: 50px;
+}
+.customers-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 94px;
+}
+.customers-list-item:not(:last-child){
+    margin-right: 27px; 
+}
+.customers-list-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border-radius: 3%;
+    border: #AFB1B8 1px solid;
+}
+.customers-list-icon{
+    width: 106px;
+    height: 60px;
+    fill: #AFB1B8;
+}
+.customers-list-link:hover{
+    border-color: var(--sky);
+}
+.customers-list-link:hover .customers-list-icon{
+    fill: var(--sky);
+}
 .footer{
     background-color: var(--purple);
 }
@@ -199,7 +288,7 @@ body {
     color: var(--white);
     letter-spacing: 0.5px;
 }
-.footer-wrap{
+.footer-wrap-left{
     padding-top: 60px;
 }
 .footer-email{
@@ -251,9 +340,6 @@ figure{
 .team-member-title{
  margin-top: 30px;
 }
-.team-member-subtitle{
- padding-bottom: 30px;
-}
 .footer-wrap{
     padding-top: 60px;
 }
@@ -273,26 +359,74 @@ figure{
     display: inline-block;
     width: 270px;
     height: 120px;
-    background-image: url(../img/group11.png);
+    background-image: url(../img/icon-antenna.png);
 }
 .features-list-item2::before{
     content: "";
     display: inline-block;
     width: 270px;
     height: 120px;
-    background-image: url(../img/group21.png);
+    background-image: url(../img/icon-clock.png);
 }
 .features-list-item3::before{
     content: "";
     display: inline-block;
     width: 270px;
     height: 120px;
-    background-image: url(../img/group31.png);
+    background-image: url(../img/icon-computer.png);
 }
 .features-list-item4::before{
     content: "";
     display: inline-block;
     width: 270px;
     height: 120px;
-    background-image: url(../img/group41.png);
+    background-image: url(../img/icon-astronaut.png);
 }
+.main-footer-wrap{
+    display: flex;
+    justify-content: start;
+}
+.footer-wrap-right{
+    margin-left: 70px;
+}
+.footer-social-text{
+    margin: 0;
+}
+.footer-social-text{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    margin-top: 72px;
+}
+.footer-social-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    padding-bottom: 35px;
+}
+.footer-social:not(:last-child) {
+    margin-right: 10px; 
+}
+.footer-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+.footer-social-icon {
+    width: 20px;
+    height: 20px;
+    fill: #FFFFFF;
+}
+.footer-icon-wrapper{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-icon-wrapper:hover {
+    background-color: #2196F3;
+}
+
