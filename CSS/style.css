@@ -231,6 +231,10 @@ body {
 .social-icon-wrapper:hover .team-member-social-icon {
     fill: #FFFFFF;
 }
+.customers{
+    padding-top:94px;
+    padding-bottom: 94px;
+}
 .customers-title{
     margin: 0px;
     font-size: 36px;
@@ -238,7 +242,7 @@ body {
     text-align: center;
     color: var(--black);
     letter-spacing: 1px;
-    margin-top: 94px;
+    margin-top: 0px;
     margin-bottom: 50px;
 }
 .customers-list{
@@ -247,7 +251,7 @@ body {
     justify-content: center;
     padding: 0;
     margin: 0;
-    margin-bottom: 94px;
+    margin-bottom: 0px;
 }
 .customers-list-item:not(:last-child){
     margin-right: 27px; 
