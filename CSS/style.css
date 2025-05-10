@@ -162,6 +162,24 @@ body {
     color: var(--black);
     letter-spacing: 1px;
 }
+.our-works-caption{
+    position: relative;
+}
+.our-works-figcaption{
+    height: 70px;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    position: absolute;
+    bottom: 5px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+}
 .team-section{
     background-color: var(--another-white);
 }
@@ -231,6 +249,10 @@ body {
 .social-icon-wrapper:hover .team-member-social-icon {
     fill: #FFFFFF;
 }
+.customers{
+    padding-top:94px;
+    padding-bottom: 94px;
+}
 .customers-title{
     margin: 0px;
     font-size: 36px;
@@ -238,7 +260,7 @@ body {
     text-align: center;
     color: var(--black);
     letter-spacing: 1px;
-    margin-top: 94px;
+    margin-top: 0px;
     margin-bottom: 50px;
 }
 .customers-list{
@@ -247,7 +269,7 @@ body {
     justify-content: center;
     padding: 0;
     margin: 0;
-    margin-bottom: 94px;
+    margin-bottom: 0px;
 }
 .customers-list-item:not(:last-child){
     margin-right: 27px; 
