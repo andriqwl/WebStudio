@@ -297,6 +297,10 @@ body {
 }
 
 
+.input-wrapper:focus-within .modal-icon {
+    fill: var(--sky);
+}
+
 
 .features-section{
     margin-top: 94px;
@@ -628,7 +632,7 @@ figure{
 .footer-icon-wrapper:hover {
     background-color: #2196F3;
 }
-.footer-email-form{
+.footer-email-form-wrap{
     list-style: none;
     display: flex;
     justify-content: center;

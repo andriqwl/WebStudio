@@ -395,12 +395,13 @@
         </div>
         <div class="footer-wrap-center"> 
             <h3 class="footer-email-text">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
-            <ul class="footer-email-form">
+            <form action="footer-email-form">
+                <ul class="footer-email-form-wrap">
                 <li class="footer-social">
-                    <input type="text" placeholder="E-mail" id="e-mail" class="footer-input-mail">
+                    <input type="email" placeholder="E-mail" id="e-mail" class="footer-input-mail">
                 </li>
                 <li class="footer-social">
-                    <button type="submit" type="reset" for="e-mail" class="footer-button">
+                    <button type="submit" class="footer-button">
                         <p class="footer-subscribe">Підписатися</p>
                         <svg class="footer-social-icon footer-right-icon">
                             <use href="img/sprites.svg#icon-telegram"></use>
@@ -408,6 +409,7 @@
                     </button>
                 </li>
             </ul>
+            </form>
         </div>
     </div>
     </footer>
