@@ -65,6 +65,7 @@ body {
     color: white;
     border-radius: 4px;
     border: none;
+    cursor: pointer;
 }
 .nav-list{
     list-style: none;
@@ -127,6 +128,176 @@ body {
     fill: var(--sky);
 }
 
+/* Modal window*/
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.212);
+    backdrop-filter: blur(5px);
+    z-index: 3;
+}
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+    padding-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;      
+    transform: translate(-50%, -50%)
+    
+}
+.modal-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.modal-close-icon{
+    width: 11px;
+    height: 11px;
+    display: flex;
+}
+.modal-icon{
+    width: 20px;
+    height: 20px;
+    fill: black;
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.modal-close{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0.05px solid #AFB1B8;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+.modal-close:hover .modal-close-icon{
+    fill: var(--sky);
+}
+.modal-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(33, 33, 33, 1);
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    font-weight: 700;
+}
+.modal-form > label{
+    font-size: 12px;
+    color: var(--grey);
+    font-weight: 400;
+}
+.modal-input{
+    box-sizing: border-box;
+   margin-top: 4px;
+   margin-bottom: 10px;
+   padding: 11px;
+   padding-left: 40px;
+   border: 1px solid #AFB1B8;
+   border-radius: 4px;
+   width: 100%;
+}
+.modal-input-textarea{
+    box-sizing: border-box;
+   margin-top: 4px;
+   margin-bottom: 10px;
+   padding: 11px;
+   
+   border: 1px solid #AFB1B8;
+   border-radius: 4px;
+   width: 100%;
+}
+.modal-input-textarea:hover{
+    border: 1px solid var(--sky);
+}
+.modal-input-checkbox{
+   box-sizing: border-box;
+   margin-top: 4px;
+   margin-bottom: 10px;
+   padding: 11px;
+   padding-left: 20px;
+   width: 100%;
+   display: flex;
+   gap: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.modal-input-checkbox > p{
+    color: var(--grey);
+    letter-spacing: 0.42px;
+}
+.modal-input-checkbox > p > a{
+    margin-left: 10px;
+    color: #2196F3;
+}
+.input-wrapper{
+    position: relative;
+}
+.input-wrapper:hover .modal-icon{
+    fill: var(--sky);
+}
+.input-wrapper:hover .modal-input{
+    border: 1px solid var(--sky);
+}
+.modal-input:focus,
+.modal-input-textarea:focus {
+    border: 1px solid var(--sky);
+    outline: none; 
+}
+.focus-1:focus-within .focus-img-1 {
+    fill: var(--sky);
+}
+.modal-bottom-button{
+    width: 200px;
+    height: 50px;
+    background-color: var(--sky);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.modal-input-textarea:focus {
+    border: 1px solid var(--sky);
+    outline: none;
+}
+.no-scroll {
+    overflow: hidden;
+    padding-right: 18px;
+}
+
+
+
 .features-section{
     margin-top: 94px;
     margin-bottom: 94px;
@@ -165,6 +336,11 @@ body {
 .our-works-caption{
     position: relative;
 }
+.our-works-img{
+    display:block;
+    max-width:100%;
+    width: 100%;
+}
 .our-works-figcaption{
     height: 70px;
     width: 100%;
@@ -174,7 +350,7 @@ body {
     font-weight: 700;
     letter-spacing: 0.5px;
     position: absolute;
-    bottom: 5px;
+    bottom: 0px;
     font-size: 14px;
     display: flex;
     justify-content: center;  
@@ -186,8 +362,8 @@ body {
 .team-wrap{
     background-color: var(--white);
     border-bottom-left-radius: 4px; 
-  border-bottom-right-radius: 4px; 
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-bottom-right-radius: 4px; 
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .team-text{
     text-align: center;
@@ -408,7 +584,7 @@ figure{
     display: flex;
     justify-content: start;
 }
-.footer-wrap-right{
+.footer-wrap-center{
     margin-left: 70px;
 }
 .footer-social-text{
@@ -420,7 +596,7 @@ figure{
     color: var(--white);
     letter-spacing: 0.5px;
     margin-bottom: 20px;
-    margin-top: 72px;
+    margin-top: 68px;
 }
 .footer-social-list{
     list-style: none;
@@ -428,6 +604,7 @@ figure{
     justify-content: center;
     padding: 0;
     padding-bottom: 35px;
+    flex-wrap: wrap;
 }
 .footer-social:not(:last-child) {
     margin-right: 10px; 
@@ -451,4 +628,60 @@ figure{
 .footer-icon-wrapper:hover {
     background-color: #2196F3;
 }
-
+.footer-email-form{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    padding-bottom: 35px;
+    flex-wrap: wrap;
+}
+.footer-email-text{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    margin-top: 68px;
+}
+.footer-input-mail{
+    width: 358px;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 16px;
+    border: 2px solid #ffffff31;
+    border-radius: 4px;
+    background-color: var(--purple);
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+.footer-button{
+    width: 200px;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 16px;
+    background-color: var(--sky);
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+}
+.footer-button:hover{
+    background-color: var(--white);
+}
+.footer-button:hover .footer-social-icon,
+.footer-button:hover .footer-subscribe
+{
+    fill: var(--black);
+    color: var(--black);
+}
+.footer-right-icon{
+    padding-left: 10px;
+}

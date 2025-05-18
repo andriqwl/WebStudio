@@ -37,8 +37,55 @@
     <main class="main"> 
         <section class="main-section">
             <div class="container main-section-wrap">
-            <h1 class="main-text">Ефективні рішення для <br> вашого бізнесу</h1>
-            <button type="button" class="main-button">Замовити послугу</button>
+                <h1 class="main-text">Ефективні рішення для <br> вашого бізнесу</h1>
+                <button type="button" class="main-button" data-modal-open>Замовити послугу</button>
+            </div>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="modal-close" data-modal-close>
+                        <svg class="modal-close-icon">
+                            <use href="img/sprites.svg#icon-close"></use>
+                        </svg>
+                    </button> 
+                    <h3 class="modal-text">Залиште свої дані, ми вам передзвонимо</h3>
+                    <form action="" class="modal-form">
+                        <label for="name">Ім'я</label>
+                        <div class="input-wrapper">
+                          <input type="text" id="name" class="modal-input focus-1" required>
+                          <svg class="modal-icon focus-img-1">
+                            <use href="img/sprites.svg#icon-person-form"></use>
+                          </svg> 
+                        </div>
+
+                        <label for="phone">Телефон</label>
+                        <div class="input-wrapper">
+                          <input type="phone" id="phone" class="modal-input focus-2" required>
+                          <svg class="modal-icon focus-img-2">
+                            <use href="img/sprites.svg#icon-phone-form"></use>
+                          </svg> 
+                        </div>
+                        
+                        <label for="email">Пошта</label>
+                        <div class="input-wrapper">
+                          <input type="email" id="email" class="modal-input focus-3" required>
+                          <svg class="modal-icon focus-img-3">
+                            <use href="img/sprites.svg#icon-email-form"></use>
+                          </svg> 
+                        </div>
+
+                        
+                        <label for="comment">Коментар</label>
+                        <textarea name="" id="comment" class="modal-input-textarea" rows="5" placeholder="Введіть текст" required></textarea>
+                        </textarea>
+
+                        <div class="modal-input-checkbox">
+                            <input type="checkbox">
+                            <p>Погоджуюся з розсилкою та приймаю<a href="#">Умови договору</a></p>
+                        </div>
+                        <input type="button" value="Відправити" class="modal-bottom-button">
+
+                    </form>
+                </div>
             </div>
         </section>
         <section class="features-section">
@@ -77,13 +124,13 @@
                 <li class="our-works-item">
                     <figure class="our-works-caption">
                         <img class="our-works-img" width="370" src="img/mobile-app-dev.png" alt="Adaptability">
-                        <figcaption class="our-works-figcaption">ДЕСКТОПНІ ДОДАТКИ</figcaption>
+                        <figcaption class="our-works-figcaption">МОБІЛЬНІ ДОДАТКИ</figcaption>
                     </figure>
                 </li>
                 <li class="our-works-item">
                     <figure class="our-works-caption">
                         <img class="our-works-img" width="370" src="img/color-palette.png" alt="Colors">
-                        <figcaption class="our-works-figcaption">ДЕСКТОПНІ ДОДАТКИ</figcaption>
+                        <figcaption class="our-works-figcaption">ДИЗАЙНЕРСЬКІ ДОДАТКИ</figcaption>
                     </figure>
                 </li>
             </ul>
@@ -313,7 +360,7 @@
             <a class="footer-phone" href="tel:+380961111111">+38 096 111 11 11</a>
         </address>
         </div>
-        <div class="footer-wrap-right"> 
+        <div class="footer-wrap-center"> 
             <h3 class="footer-social-text">ПРИЄДНУЙТЕСЬ</h3>
             <ul class="footer-social-list">
                 <li class="footer-social">
@@ -346,7 +393,24 @@
                 </li>
             </ul>
         </div>
+        <div class="footer-wrap-center"> 
+            <h3 class="footer-email-text">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
+            <ul class="footer-email-form">
+                <li class="footer-social">
+                    <input type="text" placeholder="E-mail" id="e-mail" class="footer-input-mail">
+                </li>
+                <li class="footer-social">
+                    <button type="submit" type="reset" for="e-mail" class="footer-button">
+                        <p class="footer-subscribe">Підписатися</p>
+                        <svg class="footer-social-icon footer-right-icon">
+                            <use href="img/sprites.svg#icon-telegram"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
     </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
