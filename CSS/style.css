@@ -72,12 +72,31 @@ body {
     display: flex;
     padding-left: 93px;
 }
+.nav-list-item{
+    position: relative;
+}
+.nav-link::after{
+    content: "";
+    height: 2px;
+    width: 60%;
+    background-color: var(--sky);
+    position: absolute;
+    left: 0px;
+    bottom: -20px;
+    opacity: 0;
+}
+.nav-link:hover::after{
+    opacity: 1;
+}
 .nav-link{
     font-size: 14px;
     font-weight: 500;
     color: var(--black);
     text-decoration: none;
     margin-right: 50px;
+}
+.nav-link-1{
+    margin-left: 7px;
 }
 .nav-link:hover{
     color: var(--sky);
