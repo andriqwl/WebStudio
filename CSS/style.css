@@ -75,25 +75,36 @@ body {
 .nav-list-item{
     position: relative;
 }
-.nav-link::after{
-    content: "";
-    height: 2px;
-    width: 60%;
-    background-color: var(--sky);
-    position: absolute;
-    left: 0px;
-    bottom: -20px;
-    opacity: 0;
-}
-.nav-link:hover::after{
-    opacity: 1;
-}
-.nav-link{
+.nav-link {
     font-size: 14px;
     font-weight: 500;
     color: var(--black);
     text-decoration: none;
     margin-right: 50px;
+    position: relative;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link::after {
+    content: "";
+    height: 2px;
+    width: 60%;
+    background-color: var(--sky);
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    opacity: 0;
+    transform: translateX(0px);
+    transform-origin: left center;
+    transition-property: opacity, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-link:hover::after {
+    opacity: 1;
+    transform: translateX(-50px);
 }
 .nav-link-1{
     margin-left: 7px;
@@ -114,6 +125,10 @@ body {
     color: var(--grey);
     text-decoration: none;
     font-style: normal;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .address-email-icon{
     width: 16px;
@@ -122,6 +137,10 @@ body {
     text-align: center;
     padding-right: 10px;
     vertical-align: middle;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .address-phone-icon{
     width: 10px;
@@ -130,6 +149,10 @@ body {
     text-align: center;
     padding-right: 10px;
     vertical-align: middle;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .address-email:hover, .address-email:hover .address-email-icon{
     color: var(--sky);
@@ -141,6 +164,10 @@ body {
     color: var(--grey);
     text-decoration: none;
     font-style: normal;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .address-phone:hover, .address-phone:hover .address-phone-icon{
     color: var(--sky);
@@ -191,6 +218,10 @@ body {
     width: 11px;
     height: 11px;
     display: flex;
+    
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .modal-icon{
     width: 20px;
@@ -200,6 +231,10 @@ body {
     top: 14px;
     left: 10px;
     cursor: pointer;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .modal-close{
@@ -243,6 +278,10 @@ body {
    border: 1px solid #AFB1B8;
    border-radius: 4px;
    width: 100%;
+
+    transition-property: border, outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .modal-input-textarea{
     box-sizing: border-box;
@@ -253,6 +292,10 @@ body {
    border: 1px solid #AFB1B8;
    border-radius: 4px;
    width: 100%;
+
+    transition-property: border, outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .modal-input-textarea:hover{
     border: 1px solid var(--sky);
@@ -295,6 +338,11 @@ body {
 .focus-1:focus-within .focus-img-1 {
     fill: var(--sky);
 }
+.focus-img-1{
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+}
 .modal-bottom-button{
     width: 200px;
     height: 50px;
@@ -314,13 +362,9 @@ body {
     overflow: hidden;
     padding-right: 18px;
 }
-
-
 .input-wrapper:focus-within .modal-icon {
     fill: var(--sky);
 }
-
-
 .features-section{
     margin-top: 94px;
     margin-bottom: 94px;
@@ -436,6 +480,10 @@ body {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .team-member-social-icon {
     width: 20px;
@@ -447,6 +495,11 @@ body {
 }
 .social-icon-wrapper:hover .team-member-social-icon {
     fill: #FFFFFF;
+}
+.team-member-social-icon{
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .customers{
     padding-top:94px;
@@ -481,11 +534,19 @@ body {
     height: 92px;
     border-radius: 3%;
     border: #AFB1B8 1px solid;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .customers-list-icon{
     width: 106px;
     height: 60px;
     fill: #AFB1B8;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .customers-list-link:hover{
     border-color: var(--sky);
@@ -516,6 +577,10 @@ body {
     text-decoration: none;
     color: var(--white60);
     letter-spacing: 0.5px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .footer-email:hover{
     color: var(--sky);
@@ -524,6 +589,10 @@ body {
     text-decoration: none;
     color: var(--white60);
     letter-spacing: 0.5px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .footer-phone:hover{
     color: var(--sky);
@@ -640,10 +709,19 @@ figure{
     height: 44px;
     border-radius: 50%;
 }
+.footer-subscribe{
+    transition-property: fill, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+}
 .footer-social-icon {
     width: 20px;
     height: 20px;
     fill: #FFFFFF;
+
+    transition-property: fill, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .footer-icon-wrapper{
     background-color: rgba(255, 255, 255, 0.1);
@@ -695,6 +773,10 @@ figure{
     border: none;
     cursor: pointer;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .footer-button:hover{
     background-color: var(--white);
