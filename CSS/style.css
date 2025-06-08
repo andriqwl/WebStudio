@@ -184,6 +184,12 @@ body {
     background-color: rgba(0, 0, 0, 0.212);
     backdrop-filter: blur(5px);
     z-index: 3;
+    opacity: 1;
+
+    transition: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .backdrop.is-hidden{
     opacity: 0;
@@ -193,7 +199,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
     width: 528px;
     height: 581px;
     padding: 40px;
@@ -201,18 +207,22 @@ body {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
-    background-color: white;
-    position: fixed;
-    top: 50%;
-    left: 50%;      
-    transform: translate(-50%, -50%)
+    background-color: white;  
+    overflow: hidden;
+
+    transition-duration: 250ms;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
+}
+
+.backdrop.is-hidden .modal{
+    transform: translateX(-50%) scale(0.8);
 }
 .modal-form{
     display: flex;
     flex-direction: column;
     width: 100%;
-    
 }
 .modal-close-icon{
     width: 11px;
@@ -236,7 +246,9 @@ body {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
-
+.backdrop.is-hidden .modal-close {
+    opacity: 0;
+}
 .modal-close{
     width: 30px;
     height: 30px;
@@ -251,6 +263,9 @@ body {
     right: 8px;
     top: 8px;
     cursor: pointer;
+
+    opacity: 1;
+    transition: opacity 0.8s ease-in-out 0.2s; 
 }
 .modal-close:hover .modal-close-icon{
     fill: var(--sky);
@@ -263,6 +278,15 @@ body {
     font-size: 20px;
     letter-spacing: 0.6px;
     font-weight: 700;
+    transform: translateX(0);
+
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden .modal-text {
+    transform: translateX(-200%);
+    transition-delay: 200ms;
 }
 .modal-form > label{
     font-size: 12px;
@@ -283,6 +307,7 @@ body {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
+
 .modal-input-textarea{
     box-sizing: border-box;
    margin-top: 4px;
@@ -719,12 +744,25 @@ figure{
     height: 20px;
     fill: #FFFFFF;
 
-    transition-property: fill, color;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.footer-social-icon-telegram{
+    width: 20px;
+    height: 20px;
+    fill: #FFFFFF;
+
+    transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .footer-icon-wrapper{
     background-color: rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .footer-icon-wrapper:hover {
     background-color: #2196F3;
@@ -781,7 +819,7 @@ figure{
 .footer-button:hover{
     background-color: var(--white);
 }
-.footer-button:hover .footer-social-icon,
+.footer-button:hover .footer-social-icon-telegram,
 .footer-button:hover .footer-subscribe
 {
     fill: var(--black);

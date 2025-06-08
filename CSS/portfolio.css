@@ -489,10 +489,19 @@ figure{
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-social-icon-telegram{
+    width: 20px;
+    height: 20px;
+    fill: #FFFFFF;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+}
 .footer-button:hover{
     background-color: var(--white);
 }
-.footer-button:hover .footer-social-icon,
+.footer-button:hover .footer-social-icon-telegram,
 .footer-button:hover .footer-subscribe
 {
     fill: var(--black);
