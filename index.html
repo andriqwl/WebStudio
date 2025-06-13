@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
@@ -36,7 +37,7 @@
     </header>
     <main class="main"> 
         <section class="main-section">
-            <div class="container main-section-wrap">
+            <div class="container main-section-wrap" data-aos="zoom-in-up" data-aos-duration="1500">
                 <h1 class="main-text">Ефективні рішення для <br> вашого бізнесу</h1>
                 <button type="button" class="main-button" data-modal-open>Замовити послугу</button>
             </div>
@@ -91,19 +92,19 @@
         <section class="features-section">
             <div class="container">
             <ul class="features-list">
-                <li class="features-list-item features-list-item1">
+                <li class="features-list-item features-list-item1" data-aos="zoom-out-up" data-aos-duration="500">
                     <h3 class="features-title">Увага до деталей</h3>
                     <p class="features-subtitle">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                 </li>
-                <li class="features-list-item features-list-item2">
+                <li class="features-list-item features-list-item2" data-aos="zoom-out-up" data-aos-duration="500">
                     <h3 class="features-title">Пунктуальність</h3>
                     <p class="features-subtitle">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                 </li>
-                <li class="features-list-item features-list-item3">
+                <li class="features-list-item features-list-item3" data-aos="zoom-out-up" data-aos-duration="500">
                     <h3 class="features-title">Планування</h3>
                     <p class="features-subtitle">Так само консультація з широким активом значною мірою зумовлює.</p>
                 </li>
-                <li class="features-list-item features-list-item4">
+                <li class="features-list-item features-list-item4" data-aos="zoom-out-up" data-aos-duration="500">
                     <h3 class="features-title">Сучасні технології</h3>
                     <p class="features-subtitle">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                 </li>
@@ -112,22 +113,23 @@
         </section>
         <section class="our-works-section">
             <div class="container">
-            <h2 class="our-works-title">Чим ми займаємося</h2>
+            <h2 class="our-works-title" data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">Чим ми займаємося</h2>
             <ul class="our-works-list">
                 
-                <li class="our-works-item">
+                <li class="our-works-item" data-aos="fade-right" data-aos-duration="1200">
                     <figure class="our-works-caption">
                         <img class="our-works-img" width="370" src="img/ui-ux-desk.png" alt="Design ">
                         <figcaption class="our-works-figcaption">ДЕСКТОПНІ ДОДАТКИ</figcaption>
                     </figure>
                 </li>
-                <li class="our-works-item">
+                <li class="our-works-item" data-aos="fade-up" data-aos-duration="1200">
                     <figure class="our-works-caption">
                         <img class="our-works-img" width="370" src="img/mobile-app-dev.png" alt="Adaptability">
                         <figcaption class="our-works-figcaption">МОБІЛЬНІ ДОДАТКИ</figcaption>
                     </figure>
                 </li>
-                <li class="our-works-item">
+                <li class="our-works-item" data-aos="fade-left" data-aos-duration="1200">
                     <figure class="our-works-caption">
                         <img class="our-works-img" width="370" src="img/color-palette.png" alt="Colors">
                         <figcaption class="our-works-figcaption">ДИЗАЙНЕРСЬКІ ДОДАТКИ</figcaption>
@@ -138,9 +140,9 @@
         </section>
         <section class="team-section">
             <div class="container">
-            <h2 class="team-section-title">Наша команда</h2>
+            <h2 class="team-section-title" data-aos="fade-right">Наша команда</h2>
             <ul class="team-list">
-                <li class="team-item">
+                <li class="team-item" data-aos="zoom-in-down" data-aos-duration="1100">
                     <figure class="team-wrap">
                         <img class="team-img" width="270" src="img/team-igor.jpg" alt="Ігор Дем'яненко, Product Designer">
                         <figcaption class="team-text">
@@ -179,7 +181,7 @@
                         </figcaption>
                     </figure>         
                 </li>
-                <li class="team-item">
+                <li class="team-item" data-aos="zoom-in-down" data-aos-duration="1100">
                     <figure class="team-wrap">
                         <img class="team-img" width="270" src="img/team-olga.jpg" alt="Ольга Рєпіна, Frontend Developer">
                         <figcaption class="team-text">
@@ -219,7 +221,7 @@
                     </figure>
                     
                 </li>
-                <li class="team-item">
+                <li class="team-item" data-aos="zoom-in-down" data-aos-duration="1100">
                     <figure class="team-wrap">
                         <img class="team-img" width="270" src="img/team-mykola.jpg" alt="Микола Тарасов, Marketing">                    
                         <figcaption class="team-text">
@@ -258,7 +260,7 @@
                         </figcaption>
                     </figure>
                 </li>
-                <li class="team-item">
+                <li class="team-item" data-aos="zoom-in-down" data-aos-duration="1100">
                     <figure class="team-wrap">
                         <img class="team-img" width="270" src="img/team-mykhailo.jpg" alt="Михайло Єрмаков, UI Designer">
                         <figcaption class="team-text">
@@ -302,44 +304,44 @@
         </section>
         <section class="customers">
             <div class="container">
-            <h2 class="customers-title">Постійні клієнти</h2>
+            <h2 class="customers-title" data-aos="fade-down" data-aos-duration="500">Постійні клієнти</h2>
             <ul class="customers-list">
-                <li class="customers-list-item">
+                <li class="customers-list-item" data-aos="fade-down" data-aos-duration="1000">
                     <a href="#" class="customers-list-link">
                         <svg class="customers-list-icon">
                             <use href="img/sprites.svg#icon-ya"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="customers-list-item">
+                <li class="customers-list-item" data-aos="fade-down" data-aos-duration="1000">
                     <a href="#" class="customers-list-link">
                         <svg class="customers-list-icon">
                             <use href="img/sprites.svg#icon-companytagline"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="customers-list-item">
+                <li class="customers-list-item" data-aos="fade-down" data-aos-duration="1500">
                     <a href="#" class="customers-list-link">
                         <svg class="customers-list-icon">
                             <use href="img/sprites.svg#icon-company"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="customers-list-item">
+                <li class="customers-list-item" data-aos="fade-down" data-aos-duration="2000">
                     <a href="#" class="customers-list-link">
                         <svg class="customers-list-icon">
                             <use href="img/sprites.svg#icon-foster"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="customers-list-item">
+                <li class="customers-list-item" data-aos="fade-down" data-aos-duration="2500">
                     <a href="#" class="customers-list-link">
                         <svg class="customers-list-icon">
                             <use href="img/sprites.svg#icon-bramd"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="customers-list-item">
+                <li class="customers-list-item" data-aos="fade-down" data-aos-duration="3000">
                     <a href="#" class="customers-list-link">
                         <svg class="customers-list-icon">
                             <use href="img/sprites.svg#icon-companytag"></use>
@@ -414,5 +416,8 @@
     </div>
     </footer>
     <script src="./js/modal.js"></script>
-</body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script></body>
+    <script>
+        AOS.init();
+    </script>
 </html>
