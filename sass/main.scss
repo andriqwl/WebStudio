@@ -1,0 +1,25 @@
+@import "./utils/variables";
+
+@import "./global/typography";
+@import "./global/container";
+
+@import "./components/header/header";
+@import "./components/header/contacts";
+@import "./components/header/navigation";
+
+@import "./components/main/hero";
+@import "./components/main/features";
+@import "./components/main/feauters-items";
+@import "./components/main/our-work";
+@import "./components/main/team";
+@import "./components/main/customers";
+
+@import "./components/footer/adress";
+@import "./components/footer/socials";
+
+@import "./components/portfolio/buttons";
+@import "./components/portfolio/overlay";
+@import "./components/portfolio/post-section";
+@import "./components/portfolio/posts";
+
+@import "./components/modal";
