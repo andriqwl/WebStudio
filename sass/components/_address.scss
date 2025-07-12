@@ -1,0 +1,46 @@
+.address {
+  margin-left: auto;
+
+  &__icon {
+    width: 20px;
+    height: 16px;
+    fill: #AFB1B8;
+    text-align: center;
+    padding-right: 10px;
+    vertical-align: middle;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__icon--size {
+    width: 16px;
+    height: 12px;
+    ;
+  }
+}
+
+.address__contact {
+
+  font-size: 14px;
+  font-weight: 500;
+  color: $caption-color;
+  text-decoration: none;
+  font-style: normal;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:hover .address__icon {
+    color: $hover-color;
+    fill: $hover-color;
+  }
+
+}
+
+.address__link {
+  margin-right: 30px;
+  font-weight: 500;
+}

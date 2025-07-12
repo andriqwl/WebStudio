@@ -1,0 +1,13 @@
+.section{
+    @extend %sections-padding;
+
+    &__title{
+        margin: 0px;
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+        color: $text-color-base;
+        letter-spacing: 1px;
+        @extend %sections-title-padding;
+    }
+}

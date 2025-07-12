@@ -1,30 +1,30 @@
-.post-item-wrap{
+.post__wrap{
     border-bottom: 1px solid rgb(241, 241, 241);
     border-left: 1px solid rgb(241, 241, 241);
     border-right: 1px solid rgb(241, 241, 241);
     position: relative;
     overflow: hidden;
 }
-.post-item:nth-child(-n+6){
+.post:nth-child(-n+6){
     margin-bottom: 0;
 }
-.post-text{
+.post__text{
     text-align: start;
     padding-right: 24px;
     padding-left: 24px;
 }
-.post-img{
+.post__img{
     display: block;
     width: 100%;
 }
-.post-title{
+.post__title{
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 1px;
     color: $text-color-base;
     margin-top: 20px;
 }
-.post-subtitle{
+.post__subtitle{
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.5px;

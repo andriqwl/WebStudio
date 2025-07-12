@@ -1,8 +1,9 @@
-.header-wrap{
-    display: flex;
-    align-items: center;
-}
 .header{
     padding: 14px 0;
     border-bottom: 2px solid rgba(177, 177, 177, 0.178);
-}
+
+    &__wrap{
+    display: flex;
+    align-items: center;
+    }
+}   

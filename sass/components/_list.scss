@@ -1,0 +1,23 @@
+.list{
+    padding-top: 50px;
+
+    &--features{
+        @include grid-list(4, 30px)
+        
+        
+    }
+
+    &--works{
+        @include grid-list(3, 30px)
+    }
+
+    &--team{
+        @include grid-list(4, 30px)
+    }
+
+    &--customers{
+        @include grid-list(6, 30px)
+    }
+    
+}
+    
