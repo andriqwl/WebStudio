@@ -1,7 +1,7 @@
-.post-item-wrap:hover .overlay{
+.post__wrap:hover .overlay{
     transform: translateY(0);
 }
-.overlay-wrap{
+.overlay__wrap{
  position: relative;
  overflow: hidden;
 }
@@ -27,6 +27,6 @@
     font-size: 18px;
     line-height: 28px;
 }
-.overlay-content{
+.overlay__content{
     color: $background-color-primary;
 }

@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
 }
-.nav-button{
+.nav-wrap__button{
     background-color: $button;
     height: 38px;
     padding: 6px 22px 6px 22px;
@@ -14,7 +14,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-button:hover{
+.nav-wrap__button:hover{
     background-color: $hover-color;
     color: $background-color-primary;
     cursor: pointer;
@@ -23,6 +23,6 @@
         0px 1px 2px 0px rgba(0, 0, 0, 0.08),
         0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
-.nav-button:not(:last-child){
+.nav-wrap__button:not(:last-child){
     margin-right: 8px;
 }

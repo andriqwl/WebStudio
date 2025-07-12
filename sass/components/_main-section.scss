@@ -1,4 +1,18 @@
-.main-text{
+.main-section{
+    background-image: url("../../img/bg-gradient.png"),
+                      url("../../img/bg-office.png");
+    background-size: cover, cover; 
+
+    &__wrap{
+         height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+.main-section__text{
     color: white;
     font-size: 44px;
     font-weight: 900;
@@ -8,19 +22,7 @@
     margin-top: 0;
     letter-spacing: 2px;
 }
-.main-section{
-    background-image: url("../../img/bg-gradient.png"),
-                      url("../../img/bg-office.png");
-    background-size: cover, cover; 
-}
-.main-section-wrap{
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.main-button{
+.main-section__button{
     height: 50px;
     width: 216px;
     background-color: $hover-color;

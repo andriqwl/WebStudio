@@ -1,7 +1,7 @@
 .posts-section{
     padding-top: 34px;
 }
-.posts-section-list{
+.posts-section__list{
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,7 +12,7 @@
     list-style: none;
     margin-bottom: 94px;
 }
-.post-item{
+.post{
     width: calc((100% - 60px)/3);
 
     transition-property: box-shadow;
@@ -22,7 +22,7 @@
     margin: 0;
     padding: 0;
 }
-.post-item:hover{
+.post:hover{
     cursor: pointer;
     box-shadow: 
         1px 4px 6px 0px rgba(0, 0, 0, 0.16),

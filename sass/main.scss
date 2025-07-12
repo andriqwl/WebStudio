@@ -1,25 +1,34 @@
 @import "./utils/variables";
+@import "./utils/placeholders";
+@import "./utils/mixins";
 
 @import "./global/typography";
 @import "./global/container";
 
-@import "./components/header/header";
-@import "./components/header/contacts";
-@import "./components/header/navigation";
+@import "./components/header";
+@import "./components/logo";
+@import "./components/navigation";
+@import "./components/address";
 
-@import "./components/main/hero";
-@import "./components/main/features";
-@import "./components/main/feauters-items";
-@import "./components/main/our-work";
-@import "./components/main/team";
-@import "./components/main/customers";
+@import "./components/section";
+@import "./components/list";
 
-@import "./components/footer/adress";
-@import "./components/footer/socials";
+@import "./components/main-section";
+@import "./components/features";
+@import "./components/our.work";
+@import "./components/team";
+@import "./components/customers";
 
-@import "./components/portfolio/buttons";
-@import "./components/portfolio/overlay";
-@import "./components/portfolio/post-section";
-@import "./components/portfolio/posts";
+@import "./components/socials";
+@import "./components/subscribe";
+@import "./components/address-footer";
+@import "./components/footer";
 
 @import "./components/modal";
+
+//  Portfolio
+@import "./components/buttons";
+@import "./components/overlay";
+@import "./components/post-section";
+@import "./components/posts";
+

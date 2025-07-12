@@ -1,0 +1,33 @@
+%sections-padding{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+%sections-title-padding{
+    padding-bottom: 50px;
+}
+
+%feauters-img{
+    content: "";
+    display: inline-block;
+    width: 270px;
+    height: 120px;
+}
+
+%items{
+    content: "";
+    display: block;
+    width: 100%;
+    max-width: 270px;
+    aspect-ratio: 9 / 4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+%footer-adress{
+    text-decoration: none;
+    color: $caption-adress;
+    letter-spacing: 0.5px;
+}
+
