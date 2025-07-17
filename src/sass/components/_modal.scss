@@ -114,9 +114,7 @@
    border-radius: 4px;
    width: 100%;
 
-    transition-property: border, outline;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+   @include transition (border, outline);
 }
 .modal__input--textarea{
     &:hover{
@@ -128,13 +126,13 @@
    display: flex;
    gap: 10px;
    border: none;
-   border-radius: none;
+   border-radius: 0;
    display: flex;
    align-items: center;
    justify-content: center;
    transition-property: none;
-   transition-duration: none;
-   transition-timing-function: none;
+   transition-duration: 0s;
+   transition-timing-function: ease;
 }
 .modal__paragraph{
     color: $caption-color;

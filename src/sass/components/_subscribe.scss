@@ -1,14 +1,13 @@
-
-.footer__center{
+.footer__center {
     margin-left: 70px;
 }
 
 
-.footer__subscribe{
-    @include double-transition (fill, color);
+.footer__subscribe {
+    @include transition (fill, color);
 }
 
-.footer__telegram{
+.footer__telegram {
     width: 20px;
     height: 20px;
     fill: #FFFFFF;
@@ -16,7 +15,7 @@
     @include transition (fill);
 }
 
-.email__wrap{
+.email__wrap {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -24,7 +23,8 @@
     padding-bottom: 35px;
     flex-wrap: wrap;
 }
-.footer__text{
+
+.footer__text {
     font-size: 14px;
     font-weight: 700;
     color: $background-color-primary;
@@ -32,7 +32,8 @@
     margin-bottom: 20px;
     margin-top: 68px;
 }
-.email__input{
+
+.email__input {
     width: 358px;
     height: 50px;
     box-sizing: border-box;
@@ -44,7 +45,8 @@
     letter-spacing: 0.5px;
     font-weight: 400;
 }
-.footer__button{
+
+.footer__button {
     width: 200px;
     height: 50px;
     box-sizing: border-box;
@@ -64,15 +66,17 @@
 
     @include transition (background-color);
 }
-.footer__button:hover{
+
+.footer__button:hover {
     background-color: $caption-adress;
 }
+
 .footer__button:hover .footer__telegram,
-.footer__button:hover .footer__subscribe
-{
+.footer__button:hover .footer__subscribe {
     fill: $text-color-base;
     color: $text-color-base;
 }
-.footer__icon{
+
+.footer__icon {
     padding-left: 10px;
 }
