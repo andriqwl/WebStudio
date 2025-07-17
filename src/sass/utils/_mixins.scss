@@ -1,0 +1,22 @@
+@mixin grid-list($columns, $gap) {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+@mixin member ($weight, $color){
+  font-size: 16px;
+    font-weight: $weight;
+    color: $color;
+    letter-spacing: 0.5px;
+}
+
+@mixin transition($properties...) {
+  transition-property: $properties;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

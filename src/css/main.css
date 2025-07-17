@@ -27,22 +27,22 @@
 @font-face {
   font-family: "Roboto";
   font-weight: 400;
-  src: url("../../fonts/Roboto-Regular.ttf");
+  src: url("../fonts/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "Roboto";
   font-weight: 500;
-  src: url("../../fonts/Roboto-Medium.ttf");
+  src: url("../fonts/Roboto-Medium.ttf");
 }
 @font-face {
   font-family: "Roboto";
   font-weight: 700;
-  src: url("../../fonts/Roboto-Bold.ttf");
+  src: url("../fonts/Roboto-Bold.ttf");
 }
 @font-face {
   font-family: "Roboto";
   font-weight: 900;
-  src: url("../../fonts/Roboto-Black.ttf");
+  src: url("../fonts/Roboto-Black.ttf");
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -79,7 +79,7 @@ body {
   text-decoration: none;
   margin-right: 50px;
   position: relative;
-  transition-property: color;
+  transition: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -97,7 +97,7 @@ body {
   opacity: 0;
   transform: translateX(0px);
   transform-origin: left center;
-  transition-property: opacity, transform;
+  transition: opacity, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -121,7 +121,7 @@ body {
   text-align: center;
   padding-right: 10px;
   vertical-align: middle;
-  transition-property: fill;
+  transition: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -136,7 +136,7 @@ body {
   color: #757575;
   text-decoration: none;
   font-style: normal;
-  transition-property: color;
+  transition: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -200,7 +200,7 @@ body {
 }
 
 .main-section {
-  background-image: url("../../img/bg-gradient.png"), url("../../img/bg-office.png");
+  background-image: url("../img/bg-gradient.png"), url("../img/bg-office.png");
   background-size: cover, cover;
 }
 .main-section__wrap {
@@ -233,19 +233,19 @@ body {
 }
 
 .item--first::before {
-  background-image: url(../../img/icon-antenna.png);
+  background-image: url(../img/icon-antenna.png);
 }
 
 .item--second::before {
-  background-image: url(../../img/icon-clock.png);
+  background-image: url(../img/icon-clock.png);
 }
 
 .item--third::before {
-  background-image: url(../../img/icon-computer.png);
+  background-image: url(../img/icon-computer.png);
 }
 
 .item--fourth::before {
-  background-image: url(../../img/icon-astronaut.png);
+  background-image: url(../img/icon-astronaut.png);
 }
 
 .item__title {
@@ -778,7 +778,7 @@ body {
   padding: 6px 22px 6px 22px;
   border: none;
   border-radius: 4px;
-  transition-property: background-color, color, box-shadow;
+  transition: background-color, color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -809,10 +809,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  transform: translateY(101%);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(33, 150, 243, 0.9);
   box-sizing: border-box;
   display: flex;
@@ -823,6 +819,10 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
+  transform: translateY(101%);
+  transition: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay__content {
@@ -847,11 +847,11 @@ body {
 
 .post {
   width: calc((100% - 60px) / 3);
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0;
   padding: 0;
+  transition: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .post:hover {

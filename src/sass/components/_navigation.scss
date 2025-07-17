@@ -12,9 +12,8 @@
         text-decoration: none;
         margin-right: 50px;
         position: relative;
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        @include transition (color);
     }
 
     &__link:hover {
@@ -32,9 +31,8 @@
         opacity: 0;
         transform: translateX(0px);
         transform-origin: left center;
-        transition-property: opacity, transform;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+         
+        @include  transition (opacity, transform);
     }
 }
 

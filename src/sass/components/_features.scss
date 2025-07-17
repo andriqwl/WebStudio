@@ -1,18 +1,18 @@
 .item--first::before{
     @extend %items;
-    background-image: url(../../img/icon-antenna.png);
+    background-image: url(../img/icon-antenna.png);
 }
 .item--second::before{
     @extend %items;
-    background-image: url(../../img/icon-clock.png);    
+    background-image: url(../img/icon-clock.png);    
 }
 .item--third::before{
     @extend %items;
-    background-image: url(../../img/icon-computer.png);
+    background-image: url(../img/icon-computer.png);
 }
 .item--fourth::before{
     @extend %items;
-    background-image: url(../../img/icon-astronaut.png);
+    background-image: url(../img/icon-astronaut.png);
 }
 .item__title{
     font-size: 14px;
