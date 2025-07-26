@@ -1,0 +1,9 @@
+.burger{
+    margin-left: auto;
+}
+
+@media (min-width: 1600px){
+    .burger{
+        display: none;
+    }
+}

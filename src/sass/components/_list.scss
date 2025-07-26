@@ -2,20 +2,35 @@
     padding-top: 50px;
 
     &--features{
-        @include grid-list(4, 30px)
-    }
-
-    &--works{
-        @include grid-list(3, 30px)
+        @include grid-list(1, 30px);
     }
 
     &--team{
-        @include grid-list(4, 30px)
+        @include grid-list(1, 30px);
     }
 
     &--customers{
-        @include grid-list(6, 30px)
+        @include grid-list(2, 30px);
     }
     
 }
+// .list{
+//     padding-top: 50px;
+
+//     &--features{
+//         @include grid-list(4, 30px)
+//     }
+
+//     &--works{
+//         @include grid-list(3, 30px)
+//     }
+
+//     &--team{
+//         @include grid-list(1, 20px)
+//     }
+
+//     &--customers{
+//         @include grid-list(2, 30px)
+//     }
     
+// }

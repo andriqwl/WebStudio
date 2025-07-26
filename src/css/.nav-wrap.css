@@ -1,0 +1,4 @@
+.nav-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}

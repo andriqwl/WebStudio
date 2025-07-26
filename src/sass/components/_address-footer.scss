@@ -22,7 +22,6 @@
     }
 }
 .footer__phone{
-    margin-bottom: 60px;
     @extend %footer-adress;
     @include transition (color);
 
@@ -32,5 +31,6 @@
 }
 .footer__wrap{
     display: flex;
-    justify-content: start;
+    flex-direction: column;
+    
 }
