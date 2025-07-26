@@ -1,39 +1,43 @@
 .address {
-  margin-left: auto;
-
-  &__icon {
-    width: 20px;
-    height: 16px;
-    fill: #AFB1B8;
-    text-align: center;
-    padding-right: 10px;
-    vertical-align: middle;
-    
-    @include transition (fill);
-  }
-
-  &__icon--size {
-    width: 16px;
-    height: 12px;
-    ;
-  }
+  display: none;
 }
 
-.address__contact {
-  font-size: 14px;
-  font-weight: 500;
-  color: $caption-color;
-  text-decoration: none;
-  font-style: normal;
-  margin-right: 30px;
-  font-weight: 500;
+@media (min-width: 1600px) {
+  .address {
+    display: block;
+    margin-left: auto;
 
-  @include transition (color);
-  
-  &:hover,
-  &:hover .address__icon {
-    color: $hover-color;
-    fill: $hover-color;
+    &__icon {
+      width: 20px;
+      height: 16px;
+      fill: #afb1b8;
+      text-align: center;
+      padding-right: 10px;
+      vertical-align: middle;
+
+      @include transition(fill);
+    }
+
+    &__icon--size {
+      width: 16px;
+      height: 12px;
+    }
   }
+  .address__contact {
+    font-size: 14px;
+    font-weight: 500;
+    color: $caption-color;
+    text-decoration: none;
+    font-style: normal;
+    margin-right: 30px;
+    font-weight: 500;
 
+    @include transition(color);
+
+    &:hover,
+    &:hover .address__icon {
+      color: $hover-color;
+      fill: $hover-color;
+    }
+  }
 }

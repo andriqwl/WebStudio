@@ -1,7 +1,10 @@
 .nav-wrap{
+    max-width: 100%;
     padding-top: 94px;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    // justify-content: center;
 }
 .nav-wrap__button{
     background-color: $button;
@@ -9,6 +12,7 @@
     padding: 6px 22px 6px 22px;
     border: none;
     border-radius: 4px;
+    white-space: normal;
 
     @include transition (background-color, color, box-shadow);
 }

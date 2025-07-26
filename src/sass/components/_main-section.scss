@@ -1,10 +1,15 @@
+
+
+
 .main-section{
     background-image: url("../img/bg-gradient.png"),
                       url("../img/bg-office.png");
     background-size: cover, cover; 
+    background-position: center;
+    
 
     &__wrap{
-         height: 600px;
+    min-height: 50dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,7 +19,8 @@
 
 .main-section__text{
     color: white;
-    font-size: 44px;
+    font-size: 26px;
+    // font-size: 44px;
     font-weight: 900;
     line-height: 1.4;
     text-align: center;
@@ -24,7 +30,8 @@
 }
 .main-section__button{
     height: 50px;
-    width: 216px;
+    width: 200px;
+    // width: 216px;
     background-color: $hover-color;
     color: white;
     border-radius: 4px;

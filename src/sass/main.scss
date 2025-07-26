@@ -3,11 +3,11 @@
 @import "./utils/mixins";
 
 @import "./global/typography";
-@import "./global/reset";
 @import "./global/container";
 
 @import "./components/header";
 @import "./components/logo";
+@import "./components/burger";
 @import "./components/navigation";
 @import "./components/address";
 
@@ -16,7 +16,7 @@
 
 @import "./components/main-section";
 @import "./components/features";
-@import "./components/our.work";
+@import "./components/item";
 @import "./components/team";
 @import "./components/customers";
 
@@ -28,7 +28,7 @@
 @import "./components/modal";
 
 //  Portfolio
-@import "./components/buttons";
+@import "./components/nav-wrap";
 @import "./components/overlay";
 @import "./components/post-section";
 @import "./components/posts";

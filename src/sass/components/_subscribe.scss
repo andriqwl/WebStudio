@@ -1,41 +1,15 @@
-.footer__center {
-    margin-left: 70px;
-}
-
-
-.footer__subscribe {
-    @include transition (fill, color);
-}
-
-.footer__telegram {
-    width: 20px;
-    height: 20px;
-    fill: #FFFFFF;
-
-    @include transition (fill);
-}
-
 .email__wrap {
     list-style: none;
     display: flex;
+    gap: 20px;
     justify-content: center;
     padding: 0;
-    padding-bottom: 35px;
+    padding-bottom: 45px;
     flex-wrap: wrap;
 }
 
-.footer__text {
-    font-size: 14px;
-    font-weight: 700;
-    color: $background-color-primary;
-    letter-spacing: 0.5px;
-    margin-bottom: 20px;
-    margin-top: 68px;
-}
-
 .email__input {
-    width: 358px;
-    height: 50px;
+    width: 100%;
     box-sizing: border-box;
     padding: 16px;
     border: 2px solid #ffffff31;
@@ -46,37 +20,26 @@
     font-weight: 400;
 }
 
-.footer__button {
-    width: 200px;
-    height: 50px;
-    box-sizing: border-box;
-    padding: 16px;
-    background-color: $hover-color;
-    color: white;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
-    margin-left: 12px;
+// .email__wrap {
+//     list-style: none;
+//     display: flex;
+//     justify-content: center;
+//     padding: 0;
+//     padding-bottom: 35px;
+//     flex-wrap: wrap;
+// }
 
-    @include transition (background-color);
-}
+// .email__input {
+//     width: 358px;
+//     height: 50px;
+//     box-sizing: border-box;
+//     padding: 16px;
+//     border: 2px solid #ffffff31;
+//     border-radius: 4px;
+//     background-color: $background-color-secondary;
+//     font-size: 16px;
+//     letter-spacing: 0.5px;
+//     font-weight: 400;
+// }
 
-.footer__button:hover {
-    background-color: $caption-adress;
-}
 
-.footer__button:hover .footer__telegram,
-.footer__button:hover .footer__subscribe {
-    fill: $text-color-base;
-    color: $text-color-base;
-}
-
-.footer__icon {
-    padding-left: 10px;
-}

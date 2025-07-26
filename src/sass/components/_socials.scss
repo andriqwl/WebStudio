@@ -3,7 +3,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 30px;
+
+    &--padding{
+        padding-bottom: 24px;
+    }
 }
 
 .socials__wrapper {

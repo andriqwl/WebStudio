@@ -13,23 +13,31 @@
 <body>
     <header class="header">
         <div class="container header__wrap">
-            <a class="logo" href="#"><img src="src/img/logo-top.png" alt="WebStudio logo"></a>
+            <a class="logo" href="#"><img src="src/img/logo-top.png" alt="WebStudio logo" /></a>
+            <div class="burger">
+                <img src="/src/img/burger.png" alt="Burger menu for mobile users">
+            </div>
             <nav class="navigation">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a class="navigation__link navigation__link--right"
-                            href="index.html">Студія</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="portfolio.html">Портфоліо</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="#">Навігація</a></li>
+                    <li class="navigation__item">
+                        <a class="navigation__link navigation__link--right" href="index.html">Студія</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">Навігація</a>
+                    </li>
                 </ul>
             </nav>
             <address class="address">
-                <a class="address__contact address__link" href="mailto:info@webstudio.com">
+                <a class="address__contact" href="mailto:info@webstudio.com">
                     <svg class="address__icon address__icon--size">
                         <use href="src/img/sprites.svg#icon-gmail"></use>
                     </svg>
                     info@webstudio.com
                 </a>
-                <a class="address__contact address__link" href="tel:+380961111111">
+                <a class="address__contact" href="tel:+380961111111">
                     <svg class="address__icon">
                         <use href="src/img/sprites.svg#icon-phone"></use>
                     </svg>
@@ -154,20 +162,20 @@
                     <li class="post" data-aos="zoom-in">
                         <figure class="post__wrap">
                             <div class="overlay__wrap">
-                                <img class="post__img" src="src/img/brochure-preview.png"
-                                    alt="Видання Limited Edition, дизайн">
+                                <img class="post__img" src="src/img/brochure-preview.png" alt="Видання Limited Edition, дизайн">
                                 <div class="overlay">
                                     <p class="overlay__content">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
                                         відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <figcaption class="post-text">
+                            <figcaption class="post__text">
                                 <h3 class="post__title">Видання Limited Edition</h3>
                                 <p class="post__subtitle">Дизайн</p>
                             </figcaption>
                         </figure>
                     </li>
+
                     <li class="post" data-aos="zoom-in">
                         <figure class="post__wrap">
                             <div class="overlay__wrap">
@@ -209,7 +217,7 @@
     <footer class="footer">
         <div class="container footer__wrap">
             <div class="footer__left">
-                <a class="logo footer-logo" href="#"><img src="src/img/logo-bottom.png" alt="WebStudio logo"></a>
+                <a class="logo footer-logo" href="#"><img src="src/img/logo-bottom.png" alt="WebStudio logo" /></a>
                 <address class="footer__address">
                     <p class="footer-text">м. Київ, пр-т Лесі Українки, 26</p>
                     <a class="footer__email" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -218,8 +226,6 @@
             </div>
             <div class="footer__center">
                 <h3 class="footer__text">ПРИЄДНУЙТЕСЬ</h3>
-
-
 
                 <ul class="socials socials--gap socials--bg">
                     <li class="item">
@@ -251,17 +257,13 @@
                         </a>
                     </li>
                 </ul>
-
-
-
-
             </div>
             <div class="footer__center">
                 <h3 class="footer__text">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
                 <form action="email__form">
                     <ul class="email__wrap">
-                        <li class="footer-social">
-                            <input type="email" placeholder="E-mail" id="e-mail" class="email__input">
+                        <li class="footer__social">
+                            <input type="email" placeholder="E-mail" id="e-mail" class="email__input" />
                         </li>
                         <li class="footer-social">
                             <button type="submit" class="footer__button">

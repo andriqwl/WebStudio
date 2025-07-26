@@ -14,6 +14,9 @@
     <header class="header">
         <div class="container header__wrap">
             <a class="logo" href="#"><img src="src/img/logo-top.png" alt="WebStudio logo" /></a>
+            <div class="burger">
+                <img src="/src/img/burger.png" alt="Burger menu for mobile users">
+            </div>
             <nav class="navigation">
                 <ul class="navigation__list">
                     <li class="navigation__item">
@@ -70,21 +73,21 @@
                                 <use href="src/img/sprites.svg#icon-person-form"></use>
                             </svg>
                         </div>
-                        <label for="phone">Телефон</label>
+                        <label for="phone" class="modal__label">Телефон</label>
                         <div class="input-wrapper">
                             <input type="tel" id="phone" class="modal__input" required />
                             <svg class="modal__icon">
                                 <use href="src/img/sprites.svg#icon-phone-form"></use>
                             </svg>
                         </div>
-                        <label for="email">Пошта</label>
+                        <label for="email" class="modal__label">Пошта</label>
                         <div class="input-wrapper">
                             <input type="email" id="email" class="modal__input" required />
                             <svg class="modal__icon">
                                 <use href="src/img/sprites.svg#icon-email-form"></use>
                             </svg>
                         </div>
-                        <label for="comment">Коментар</label>
+                        <label for="comment" class="modal__label">Коментар</label>
                         <textarea name="comment" id="comment" class="modal__input modal__input--textarea" rows="5"
                             placeholder="Введіть текст" required>
               </textarea>
@@ -132,7 +135,7 @@
                 </ul>
             </div>
         </section>
-        <section class="section">
+        <section class="section section--works">
             <div class="container">
                 <h2 class="section__title" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                     Чим ми займаємося
@@ -171,12 +174,12 @@
                 <ul class="list list--team">
                     <li class="item" data-aos="zoom-in-down" data-aos-duration="1100">
                         <figure class="team__wrap">
-                            <img class="team__img" width="270" src="src/img/team-igor.jpg"
+                            <img class="team__img" width="450" src="src/img/team-igor.jpg"
                                 alt="Ігор Дем'яненко, Product Designer" />
                             <figcaption class="team__text">
                                 <h3 class="team__title">Ігор Дем'яненко</h3>
                                 <p class="team__subtitle">Product Designer</p>
-                                <ul class="socials">
+                                <ul class="socials socials--padding">
                                     <li class="item">
                                         <a href="#" class="socials__wrapper">
                                             <svg class="socials__icon">
@@ -211,12 +214,12 @@
                     </li>
                     <li class="item" data-aos="zoom-in-down" data-aos-duration="1100">
                         <figure class="team__wrap">
-                            <img class="team-img" width="270" src="src/img/team-olga.jpg"
+                            <img class="team__img" width="450" src="src/img/team-olga.jpg"
                                 alt="Ольга Рєпіна, Frontend Developer" />
                             <figcaption class="team__text">
                                 <h3 class="team__title">Ольга Рєпіна</h3>
                                 <p class="team__subtitle">Frontend Developer</p>
-                                <ul class="socials">
+                                <ul class="socials socials--padding">
                                     <li class="item">
                                         <a href="#" class="socials__wrapper">
                                             <svg class="socials__icon">
@@ -251,12 +254,12 @@
                     </li>
                     <li class="item" data-aos="zoom-in-down" data-aos-duration="1100">
                         <figure class="team__wrap">
-                            <img class="team-img" width="270" src="src/img/team-mykola.jpg"
+                            <img class="team__img" width="450" src="src/img/team-mykola.jpg"
                                 alt="Микола Тарасов, Marketing" />
                             <figcaption class="team__text">
                                 <h3 class="team__title">Микола Тарасов</h3>
                                 <p class="team__subtitle">Marketing</p>
-                                <ul class="socials">
+                                <ul class="socials socials--padding">
                                     <li class="item">
                                         <a href="#" class="socials__wrapper">
                                             <svg class="socials__icon">
@@ -291,12 +294,12 @@
                     </li>
                     <li class="item" data-aos="zoom-in-down" data-aos-duration="1100">
                         <figure class="team__wrap">
-                            <img class="team-img" width="270" src="src/img/team-mykhailo.jpg"
+                            <img class="team__img"  src="src/img/team-mykhailo.jpg"
                                 alt="Михайло Єрмаков, UI Designer" />
                             <figcaption class="team__text">
                                 <h3 class="team__title">Михайло Єрмаков</h3>
                                 <p class="team__subtitle">UI Designer</p>
-                                <ul class="socials">
+                                <ul class="socials socials--padding">
                                     <li class="item">
                                         <a href="#" class="socials__wrapper">
                                             <svg class="socials__icon">
@@ -433,7 +436,7 @@
                 <h3 class="footer__text">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
                 <form action="email__form">
                     <ul class="email__wrap">
-                        <li class="footer-social">
+                        <li class="footer__social">
                             <input type="email" placeholder="E-mail" id="e-mail" class="email__input" />
                         </li>
                         <li class="footer-social">

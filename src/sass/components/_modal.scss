@@ -20,8 +20,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 528px;
-    height: 581px;
+    width: 70%;
+    margin: auto;
+    // width: 528px;
+    // height: 581px;
     padding: 40px;
     padding-top: 20px;
     background-color: white;
@@ -86,6 +88,7 @@
 .modal__text{
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
     color: rgba(33, 33, 33, 1);
     font-size: 20px;
@@ -136,6 +139,8 @@
 }
 .modal__paragraph{
     color: $caption-color;
+    font-size: 12px;
+    // font-size: 16px;
     letter-spacing: 0.42px;
 }
 .modal__link{
