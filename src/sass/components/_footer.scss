@@ -72,6 +72,8 @@
 .footer__social{
     margin: 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 @media (min-width: 768px){
@@ -90,10 +92,6 @@
     }
     .footer__right{
         flex-basis: 100%;
-    }
-    .footer__social{
-        display: flex;
-        justify-content: center;
     }
 }
 
