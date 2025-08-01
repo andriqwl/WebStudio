@@ -1,5 +1,6 @@
 .section{
     @extend %sections-padding;
+    
 
     &__title{
         margin: 0px;
@@ -11,10 +12,18 @@
         @extend %sections-title-padding;
     }
 }
+.section--features{
+    margin-bottom: 60px;
+}
 .section--team{
     background-color: $button;
 }
-
 .section--works{
     display: none;
+}
+
+@media (min-width: 1200px){
+    .section--works{
+    display: flex;
+    }
 }

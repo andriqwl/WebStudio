@@ -2,9 +2,11 @@
   display: none;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 768px) {
   .address {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin-left: auto;
 
     &__icon {
@@ -24,13 +26,14 @@
     }
   }
   .address__contact {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     color: $caption-color;
     text-decoration: none;
     font-style: normal;
     margin-right: 30px;
     font-weight: 500;
+    display: flex;
 
     @include transition(color);
 
@@ -41,3 +44,11 @@
     }
   }
 }
+
+@media (min-width: 1200px){
+    .address{
+      flex-direction: row;
+      gap: 0px;
+    }
+}
+

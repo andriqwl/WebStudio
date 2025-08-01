@@ -14,7 +14,6 @@
 }
 .post{
     width: 100%;
-    // width: calc((100% - 60px)/3);
     margin: 0;
     padding: 0;
 
@@ -26,4 +25,16 @@
         1px 4px 6px 0px rgba(0, 0, 0, 0.16),
         0px 4px 4px 0px rgba(0, 0, 0, 0.06),
         0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+@media (min-width: 768px){
+    .post{
+        width: calc((100% - 30px)/2);
+    }
+}
+
+@media (min-width: 1200px){
+    .post{
+        width: calc((100% - 60px)/3);
+    }
 }

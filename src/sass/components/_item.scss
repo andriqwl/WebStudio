@@ -34,10 +34,8 @@
     background-image: url(../img/icon-astronaut.png);
 }
 
-
 .item__caption{
     position: relative;
-    
 }
 .item__img{
     display:block;
@@ -58,4 +56,23 @@
     display: flex;
     justify-content: center;  
     align-items: center; 
+}
+
+@media (min-width: 768px){
+    .item{
+        text-align: start;
+    }
+    .item--first::before{
+   max-width: 100%;
+}
+.item--second::before{
+    max-width: 100%;
+}
+.item--third::before{
+    max-width: 100%;
+}
+.item--fourth::before{
+   max-width: 100%;
+}
+    
 }

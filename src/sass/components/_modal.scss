@@ -22,8 +22,7 @@
     transform: translate(-50%, -50%) scale(1);
     width: 70%;
     margin: auto;
-    // width: 528px;
-    // height: 581px;
+    max-width: 528px;
     padding: 40px;
     padding-top: 20px;
     background-color: white;
@@ -140,8 +139,11 @@
 .modal__paragraph{
     color: $caption-color;
     font-size: 12px;
-    // font-size: 16px;
     letter-spacing: 0.42px;
+
+    @media (min-width: 1200px) {
+        font-size: 16px;
+    }
 }
 .modal__link{
     margin-left: 10px;
