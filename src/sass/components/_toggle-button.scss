@@ -1,0 +1,72 @@
+.toggle-button {
+  border: none;
+  display: block;
+  background-color: transparent;
+  width: 25px;
+  height: 20px;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  &::after,
+  &::before {
+    content: "";
+  }
+  &::before {
+    top: 0px;
+  }
+  &__line {
+    top: calc(50% - 1px);
+  }
+  &::after {
+    top: 100%;
+  }
+}
+.toggle-button__line,
+.toggle-button::before,
+.toggle-button::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: $text-color-base;
+  transition-property: transform, top;
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+  
+}
+.toggle-button:hover
+.toggle-button__line {
+    background-color: $hover-color;
+}
+
+.toggle-button:hover::before {
+    background-color: $hover-color;
+}
+.toggle-button:hover::after{
+    background-color: $hover-color;
+}
+
+
+
+.toggle-button.open {
+    .toggle-button__line{
+        transform-origin: left;
+        transform: scaleX(0);
+    }
+    &::before,
+    &::after
+    {
+        top: calc(50% - 1px);
+        
+    }
+    &::before{
+        transform: rotate(45deg);
+        
+    }
+    &::after{
+        transform: rotate(-45deg);
+        
+    }
+}
+
+
