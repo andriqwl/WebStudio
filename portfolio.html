@@ -15,9 +15,45 @@
     <header class="header">
         <div class="container header__wrap">
             <a class="logo" href="#"><img src="src/img/logo-top.png" alt="WebStudio logo" /></a>
-            <div class="burger">
-                <img src="/src/img/burger.png" alt="Burger menu for mobile users">
+
+            <div class="menu" data-menu>
+                <button class="menu__label toggle-button" data-menu-toggle>
+                    <span class="toggle-button__line"></span>
+                </button>
+                <nav class="nav menu__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link" data-menu-link>Студія</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="portfolio.html" class="nav__link">Портфоліо</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Контакти</a>
+                        </li>
+                        <li class="nav__item">
+                            <address class="address-burger">
+                                <a class="address-burger__tel" href="tel:+380961111111" data-menu-link>
+                                    +38 096 111 11 11
+                                </a>
+                                <a class="address-burger__email" href="mailto:info@webstudio.com">
+                                    info@webstudio.com
+                                </a>
+                            </address>
+                        </li>
+                        <li class="nav__item">
+                            <ul class="socials-burger">
+                                <li class="socials-burger__item">Instagram</li>
+                                <li class="socials-burger__item">Twitter</li>
+                                <li class="socials-burger__item">Facebook</li>
+                                <li class="socials-burger__item socials-burger__item--without">LinkedIn</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
             </div>
+
             <nav class="navigation">
                 <ul class="navigation__list">
                     <li class="navigation__item">
@@ -118,7 +154,8 @@
                     <li class="post">
                         <figure class="post__wrap">
                             <div class="overlay__wrap">
-                                <img class="post__img" src="src/img/product-headphones.png" alt="Проєкт Prime, маркетинг">
+                                <img class="post__img" src="src/img/product-headphones.png"
+                                    alt="Проєкт Prime, маркетинг">
                                 <div class="overlay">
                                     <p class="overlay__content">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -170,7 +207,8 @@
                     <li class="post">
                         <figure class="post__wrap">
                             <div class="overlay__wrap">
-                                <img class="post__img" src="src/img/brochure-preview.png" alt="Видання Limited Edition, дизайн">
+                                <img class="post__img" src="src/img/brochure-preview.png"
+                                    alt="Видання Limited Edition, дизайн">
                                 <div class="overlay">
                                     <p class="overlay__content">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -205,7 +243,8 @@
                     <li class="post">
                         <figure class="post__wrap">
                             <div class="overlay__wrap">
-                                <img class="post__img" src="src/img/website-preview.png" alt="Growing Business, додаток">
+                                <img class="post__img" src="src/img/website-preview.png"
+                                    alt="Growing Business, додаток">
                                 <div class="overlay">
                                     <p class="overlay__content">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -288,6 +327,7 @@
             </div>
         </div>
     </footer>
+    <script src="./src/js/mobile-menu.js"></script>
 
     <!-- Анімації -->
 
