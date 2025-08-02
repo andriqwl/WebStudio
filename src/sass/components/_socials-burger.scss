@@ -1,0 +1,16 @@
+.socials-burger{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+.socials-burger__item{
+    font-size: 18px;
+    font-weight: 500;
+    color: $hover-color;
+   border-right: 2px solid rgba(33, 33, 33, 0.2);
+   padding-right: 10px;
+}
+.socials-burger__item--without{
+    border-right: none;
+}

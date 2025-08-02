@@ -1,0 +1,22 @@
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  list-style: none;
+  display: flex;
+  align-items: start;
+  gap: 35px;
+}
+
+.nav__link {
+  color: $text-color-base;
+  font-size: 40px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: $hover-color;
+  
+}
