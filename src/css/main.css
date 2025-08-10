@@ -293,14 +293,18 @@ body {
 }
 
 .socials-burger__item {
-  font-size: 18;
-  font-weight: 500;
-  color: #2196F3;
   border-right: 2px solid rgba(33, 33, 33, 0.2);
   padding-right: 10px;
 }
 .socials-burger__item--without {
   border-right: none;
+}
+
+.socials-burger__link {
+  font-size: 18;
+  font-weight: 500;
+  color: #2196F3;
+  text-decoration: none;
 }
 
 .menu.open .socials-burger {
@@ -521,7 +525,6 @@ body {
   }
 }
 .main-section {
-  background-image: url("../img/bg-gradient.png"), url("../img/bg-office.png");
   background-size: cover, cover;
   background-position: center top;
 }
@@ -532,6 +535,16 @@ body {
   align-items: center;
   padding-top: 118px;
   padding-bottom: 118px;
+}
+@media (min-resolution: 96dpi), (min-resolution: 1dppx) {
+  .main-section {
+    background-image: url("../img/bg-gradient.png"), url("../img/bg-office.jpg");
+  }
+}
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .main-section {
+    background-image: url("../img/bg-gradient.png"), url("../img/bg-office@2x.jpg");
+  }
 }
 
 .main-section__text {
@@ -593,19 +606,19 @@ body {
 }
 
 .item--first::before {
-  background-image: url(../img/icon-antenna.png);
+  background-image: url(../img/icon-antenna.jpg);
 }
 
 .item--second::before {
-  background-image: url(../img/icon-clock.png);
+  background-image: url(../img/icon-clock.jpg);
 }
 
 .item--third::before {
-  background-image: url(../img/icon-computer.png);
+  background-image: url(../img/icon-computer.jpg);
 }
 
 .item--fourth::before {
-  background-image: url(../img/icon-astronaut.png);
+  background-image: url(../img/icon-astronaut.jpg);
 }
 
 .item__caption {

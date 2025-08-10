@@ -12,15 +12,18 @@
   bottom: 48px;
 }
 .socials-burger__item {
-  font-size: 18;
-  font-weight: 500;
-  color: $hover-color;
   border-right: 2px solid rgba(33, 33, 33, 0.2);
   padding-right: 10px;
 
   &--without {
     border-right: none;
   }
+}
+.socials-burger__link{
+    font-size: 18;
+    font-weight: 500;
+    color: $hover-color;
+    text-decoration: none;
 }
 .menu.open {
   .socials-burger {

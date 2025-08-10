@@ -1,5 +1,4 @@
 .main-section {
-  background-image: url("../img/bg-gradient.png"), url("../img/bg-office.png");
   background-size: cover, cover;
   background-position: center top;
 
@@ -11,6 +10,19 @@
     padding-top: 118px;
     padding-bottom: 118px;
   }
+
+  @media 
+  (-webkit-min-device-pixel-ratio: 1), 
+  (min-resolution: 96dpi), 
+  (min-resolution: 1dppx) {
+       background-image: url("../img/bg-gradient.png"), url("../img/bg-office.jpg");
+    }
+  @media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi), 
+  (min-resolution: 2dppx) {
+       background-image: url("../img/bg-gradient.png"), url("../img/bg-office@2x.jpg");
+    }
 }
 
 .main-section__text {
@@ -45,3 +57,6 @@
     width: 216px;
   }
 }
+
+
+

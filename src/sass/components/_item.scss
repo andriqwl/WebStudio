@@ -18,19 +18,19 @@
 }
 .item--first::before {
   @extend %items;
-  background-image: url(../img/icon-antenna.png);
+  background-image: url(../img/icon-antenna.jpg);
 }
 .item--second::before {
   @extend %items;
-  background-image: url(../img/icon-clock.png);
+  background-image: url(../img/icon-clock.jpg);
 }
 .item--third::before {
   @extend %items;
-  background-image: url(../img/icon-computer.png);
+  background-image: url(../img/icon-computer.jpg);
 }
 .item--fourth::before {
   @extend %items;
-  background-image: url(../img/icon-astronaut.png);
+  background-image: url(../img/icon-astronaut.jpg);
 }
 
 .item__caption {
