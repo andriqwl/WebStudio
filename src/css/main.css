@@ -1199,13 +1199,17 @@ body {
 
 .no-scroll {
   overflow: hidden;
-  padding-right: 14px;
 }
 
 .input-wrapper:focus-within .modal__icon {
   fill: #2196F3;
 }
 
+@media (min-width: 768px) {
+  .no-scroll {
+    padding-right: 14px;
+  }
+}
 .nav-wrap {
   max-width: 100%;
   padding-top: 94px;

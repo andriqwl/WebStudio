@@ -186,8 +186,12 @@
 }
 .no-scroll {
   overflow: hidden;
-  padding-right: 14px;
 }
 .input-wrapper:focus-within .modal__icon {
   fill: $hover-color;
 }
+ @media (min-width: 768px){
+    .no-scroll{
+        padding-right: 14px;
+    }
+ }
