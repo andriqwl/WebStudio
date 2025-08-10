@@ -1,9 +1,15 @@
-.header{
-    padding: 14px 0;
-    border-bottom: 2px solid rgba(177, 177, 177, 0.178);
+.header {
+  padding: 14px 0;
+  border-bottom: 2px solid rgba(177, 177, 177, 0.178);
 
-    &__wrap{
+  &__wrap {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    }
-}   
+  }
+}
+@media (min-width: 1200px) {
+  .header__wrap {
+    padding: 15px 0 10px 0;
+  }
+}

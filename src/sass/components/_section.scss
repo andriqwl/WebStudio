@@ -1,29 +1,28 @@
-.section{
-    @extend %sections-padding;
-    
+.section {
+  @extend %sections-padding;
 
-    &__title{
-        margin: 0px;
-        font-size: 36px;
-        font-weight: 700;
-        text-align: center;
-        color: $text-color-base;
-        letter-spacing: 1px;
-        @extend %sections-title-padding;
-    }
+  &__title {
+    margin: 0px;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: $text-color-base;
+    letter-spacing: 1px;
+    @extend %sections-title-padding;
+  }
 }
-.section--features{
-    margin-bottom: 60px;
+.section--features {
+  margin-bottom: 60px;
 }
-.section--team{
-    background-color: $button;
+.section--team {
+  background-color: $button;
 }
-.section--works{
-    display: none;
+.section--works {
+  display: none;
 }
 
-@media (min-width: 1200px){
-    .section--works{
+@media (min-width: 1200px) {
+  .section--works {
     display: flex;
-    }
+  }
 }

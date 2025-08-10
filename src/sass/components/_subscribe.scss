@@ -1,34 +1,32 @@
 .email__wrap {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    padding: 0;
-    padding-bottom: 45px;
-    flex-wrap: wrap;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+  padding-bottom: 45px;
+  flex-wrap: wrap;
 }
 
 .email__input {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 16px;
-    border: 2px solid #ffffff31;
-    border-radius: 4px;
-    background-color: $background-color-secondary;
-    font-size: 16px;
-    letter-spacing: 0.5px;
-    font-weight: 400;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+  border: 2px solid #ffffff31;
+  border-radius: 4px;
+  background-color: $background-color-secondary;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
 }
 
-@media (min-width: 1200px){
-    .email__wrap{
-        flex-wrap: nowrap;
-        gap: 0px;
-    }
-    .email__input{
-        min-width: 358px;
-        height: 50px;
-    }
+@media (min-width: 1200px) {
+  .email__wrap {
+    flex-wrap: nowrap;
+    gap: 0px;
+  }
+  .email__input {
+    min-width: 358px;
+    height: 50px;
+  }
 }
-
-

@@ -1,32 +1,32 @@
-.customers-list{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 0px;
+.customers-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0px;
 }
-.customers{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    height: 92px;
-    border-radius: 3%;
-    border: #AFB1B8 1px solid;
+.customers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 92px;
+  border-radius: 3%;
+  border: #afb1b8 1px solid;
 
-    @include transition(border-color);
+  @include transition(border-color);
 }
-.customers__icon{
-    width: 106px;
-    height: 60px;
-    fill: #AFB1B8;
+.customers__icon {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
 
-    @include transition(fill);
+  @include transition(fill);
 }
-.customers:hover{
-    border-color: $hover-color;
+.customers:hover {
+  border-color: $hover-color;
 }
-.customers:hover .customers__icon{
-    fill: $hover-color;
+.customers:hover .customers__icon {
+  fill: $hover-color;
 }

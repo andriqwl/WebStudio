@@ -16,10 +16,11 @@
         <div class="container header__wrap">
             <a class="logo" href="#"><img src="src/img/logo-top.png" alt="WebStudio logo" /></a>
 
+            <button class="menu__label toggle-button" data-menu-toggle>
+                <span class="toggle-button__line"></span>
+            </button>
+
             <div class="menu" data-menu>
-                <button class="menu__label toggle-button" data-menu-toggle>
-                    <span class="toggle-button__line"></span>
-                </button>
                 <nav class="nav menu__nav">
                     <ul class="nav__list">
                         <li class="nav__item">
@@ -31,56 +32,31 @@
                         <li class="nav__item">
                             <a href="#" class="nav__link">Контакти</a>
                         </li>
-                        <li class="nav__item">
-                            <address class="address-burger">
-                                <a class="address-burger__tel" href="tel:+380961111111" data-menu-link>
-                                    +38 096 111 11 11
-                                </a>
-                                <a class="address-burger__email" href="mailto:info@webstudio.com">
-                                    info@webstudio.com
-                                </a>
-                            </address>
-                        </li>
-                        <li class="nav__item">
-                            <ul class="socials-burger">
-                                <li class="socials-burger__item">Instagram</li>
-                                <li class="socials-burger__item">Twitter</li>
-                                <li class="socials-burger__item">Facebook</li>
-                                <li class="socials-burger__item socials-burger__item--without">LinkedIn</li>
-                            </ul>
-                        </li>
                     </ul>
                 </nav>
-
+                <address class="address">
+                    <a class="address__contact address__contact--email" href="mailto:info@webstudio.com">
+                        <svg class="address__icon address__icon--email">
+                            <use href="src/img/sprites.svg#icon-gmail"></use>
+                        </svg>
+                        info@webstudio.com
+                    </a>
+                    <a class="address__contact address__contact--tel" href="tel:+380961111111">
+                        <svg class="address__icon address__icon--tel">
+                            <use href="src/img/sprites.svg#icon-phone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                    </address>
+                    <ul class="socials-burger">
+                        <li class="socials-burger__item">Instagram</li>
+                        <li class="socials-burger__item">Twitter</li>
+                        <li class="socials-burger__item">Facebook</li>
+                        <li class="socials-burger__item socials-burger__item--without">
+                            LinkedIn
+                        </li>
+                    </ul>        
             </div>
-
-            <nav class="navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <a class="navigation__link navigation__link--right" href="index.html">Студія</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="portfolio.html">Портфоліо</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="#">Контакти</a>
-                    </li>
-                </ul>
-            </nav>
-            <address class="address">
-                <a class="address__contact" href="mailto:info@webstudio.com">
-                    <svg class="address__icon address__icon--size">
-                        <use href="src/img/sprites.svg#icon-gmail"></use>
-                    </svg>
-                    info@webstudio.com
-                </a>
-                <a class="address__contact" href="tel:+380961111111">
-                    <svg class="address__icon">
-                        <use href="src/img/sprites.svg#icon-phone"></use>
-                    </svg>
-                    +38 096 111 11 11
-                </a>
-            </address>
         </div>
     </header>
     <main class="portfolio-main">
@@ -102,7 +78,7 @@
                     <li class="post">
                         <figure class="post__wrap">
                             <div class="overlay__wrap">
-                                <img class="post__img" src="src/img/layout-preview.png" alt="Технокряк, веб-сайт">
+                                <img class="post__img" src="src/img/layout-preview.jpg" alt="Технокряк, веб-сайт">
                                 <div class="overlay">
                                     <p class="overlay__content">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -119,7 +95,7 @@
                     <li class="post">
                         <figure class="post__wrap">
                             <div class="overlay__wrap">
-                                <img class="post__img" src="src/img/illustration-hero.png"
+                                <img class="post__img" src="src/img/illustration-hero.jpg"
                                     alt="Постер New Orlean vs Golden Star, дизай">
                                 <div class="overlay">
                                     <p class="overlay__content">Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -137,7 +113,7 @@
                     <li class="post">
                         <figure class="post__wrap">
                             <div class="overlay__wrap">
-                                <img class="post__img" src="src/img/logo-seafood.png" alt="Ресторан Seafood, додаток">
+                                <img class="post__img" src="src/img/logo-seafood.jpg" alt="Ресторан Seafood, додаток">
                                 <div class="overlay">
                                     <p class="overlay__content">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -154,7 +130,7 @@
                     <li class="post">
                         <figure class="post__wrap">
                             <div class="overlay__wrap">
-                                <img class="post__img" src="src/img/product-headphones.png"
+                                <img class="post__img" src="src/img/product-headphones.jpg"
                                     alt="Проєкт Prime, маркетинг">
                                 <div class="overlay">
                                     <p class="overlay__content">Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -172,7 +148,7 @@
                     <li class="post">
                         <figure class="post__wrap">
                             <div class="overlay__wrap">
-                                <img class="post__img" src="src/img/product-boxes.png" alt="Проєкт Boxes, додаток">
+                                <img class="post__img" src="src/img/product-boxes.jpg" alt="Проєкт Boxes, додаток">
                                 <div class="overlay">
                                     <p class="overlay__content">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -189,7 +165,7 @@
                     <li class="post">
                         <figure class="post__wrap">
                             <div class="overlay__wrap">
-                                <img class="post__img" src="src/img/website-darkmode.png"
+                                <img class="post__img" src="src/img/website-darkmode.jpg"
                                     alt="Inspiration has no Borders, веб-сайт">
                                 <div class="overlay">
                                     <p class="overlay__content">Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -207,7 +183,7 @@
                     <li class="post">
                         <figure class="post__wrap">
                             <div class="overlay__wrap">
-                                <img class="post__img" src="src/img/brochure-preview.png"
+                                <img class="post__img" src="src/img/brochure-preview.jpg"
                                     alt="Видання Limited Edition, дизайн">
                                 <div class="overlay">
                                     <p class="overlay__content">Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -226,7 +202,7 @@
                     <li class="post">
                         <figure class="post__wrap">
                             <div class="overlay__wrap">
-                                <img class="post__img" src="src/img/label-tag.png" alt="Проєкт LAB, маркетинг">
+                                <img class="post__img" src="src/img/label-tag.jpg" alt="Проєкт LAB, маркетинг">
                                 <div class="overlay">
                                     <p class="overlay__content">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -243,7 +219,7 @@
                     <li class="post">
                         <figure class="post__wrap">
                             <div class="overlay__wrap">
-                                <img class="post__img" src="src/img/website-preview.png"
+                                <img class="post__img" src="src/img/website-preview.jpg"
                                     alt="Growing Business, додаток">
                                 <div class="overlay">
                                     <p class="overlay__content">Ресурс пропонує комплексні пропозиції з різним рівнем
