@@ -1,49 +1,47 @@
-.main-section{
-    background-image: url("../img/bg-gradient.png"),
-                      url("../img/bg-office.png");
-    background-size: cover, cover; 
-    background-position: center;
-    
+.main-section {
+  background-image: url("../img/bg-gradient.png"), url("../img/bg-office.png");
+  background-size: cover, cover;
+  background-position: center top;
 
-    &__wrap{
+  &__wrap {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 118px;    
+    padding-top: 118px;
     padding-bottom: 118px;
-    }
+  }
 }
 
-.main-section__text{
-    color: white;
-    font-size: 26px;
-    font-weight: 900;
-    line-height: 1.4;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 0;
-    letter-spacing: 2px;
+.main-section__text {
+  color: white;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: 2px;
 }
-.main-section__button{
-    height: 50px;
-    width: 200px;
-    background-color: $hover-color;
-    color: white;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
+.main-section__button {
+  height: 50px;
+  width: 200px;
+  background-color: $hover-color;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
 }
 
-@media (min-width: 1200px){
-    .main__section{
-         padding-top: 200px;    
-         padding-bottom: 280px;
-    }
-    .main-section__text{
-        font-size: 44px;
-    }
-    .main-section__button{
-        width: 216px;
-    }
+@media (min-width: 1200px) {
+  .main-section {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  .main-section__text {
+    font-size: 44px;
+  }
+  .main-section__button {
+    width: 216px;
+  }
 }

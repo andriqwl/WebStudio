@@ -1,54 +1,90 @@
 .address {
+  transform: translateX(100%);
+  transition: transform 0.1s linear;
+
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 32px;
+  padding-left: 40px;
+  padding-bottom: 135px;
+}
+.menu.open {
+  .address {
+    transform: translateX(0);
+  }
+}
+.address__icon {
   display: none;
+}
+
+.address__contact {
+  font-size: 12px;
+  font-weight: 500;
+  color: $caption-color;
+  text-decoration: none;
+  font-style: normal;
+  margin-right: 30px;
+  font-weight: 500;
+  display: flex;
+
+  @include transition(color);
+
+  &:hover,
+  &:hover .address__icon {
+    color: $hover-color;
+    fill: $hover-color;
+  }
+}
+
+.address__contact--tel {
+  font-size: 34px;
+  font-weight: 500;
+  color: $hover-color;
+}
+.address__contact--email {
+  font-size: 24px;
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
   .address {
-    display: flex;
+    transform: none;
     flex-direction: column;
-    gap: 10px;
-    margin-left: auto;
-
-    &__icon {
-      width: 20px;
-      height: 16px;
-      fill: #afb1b8;
-      text-align: center;
-      padding-right: 10px;
-      vertical-align: middle;
-
-      @include transition(fill);
-    }
-
-    &__icon--size {
-      width: 16px;
-      height: 12px;
-    }
+    gap: 8px;
+    padding: 0;
+    margin-left: 40px;
   }
   .address__contact {
     font-size: 12px;
-    font-weight: 500;
+
+    &--tel {
+      color: $caption-color;
+    }
+  }
+  .address__icon {
+    display: inline-block;
     color: $caption-color;
-    text-decoration: none;
-    font-style: normal;
-    margin-right: 30px;
-    font-weight: 500;
-    display: flex;
 
-    @include transition(color);
+    &--tel {
+      width: 10px;
+      height: 14px;
+      padding-right: 8px;
+    }
 
-    &:hover,
-    &:hover .address__icon {
-      color: $hover-color;
-      fill: $hover-color;
+    &--email {
+      width: 14px;
+      height: 10px;
+      padding-right: 8px;
     }
   }
 }
 
-@media (min-width: 1200px){
-    .address{
-      flex-direction: row;
-      gap: 0px;
-    }
-}
+@media (min-width: 1200px) {
+  .address {
+    flex-direction: row;
+  }
 
+  .address__contact {
+    font-size: 14px;
+  }
+}

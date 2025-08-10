@@ -1,53 +1,52 @@
-.list{
-    &--features{
-        @include grid-list(1, 30px);
-    }
+.list {
+  &--features {
+    @include grid-list(1, 30px);
+  }
 
-    &--team{
-        @include grid-list(1, 30px);
-    }
+  &--team {
+    @include grid-list(1, 30px);
+  }
 
-    &--customers{
-        @include grid-list(2, 30px);
-    }
-    
+  &--customers {
+    @include grid-list(2, 30px);
+  }
 }
 
-@media (min-width: 768px){
-    .list{
-    &--features{
-        @include grid-list(2, 30px);
+@media (min-width: 768px) {
+  .list {
+    &--features {
+      @include grid-list(2, 30px);
     }
 
-    &--team{
-        @include grid-list(2, 30px);
+    &--team {
+      @include grid-list(2, 30px);
     }
 
-    &--customers{
-        @include grid-list(3, 30px);
-    } 
+    &--customers {
+      @include grid-list(3, 30px);
+    }
+  }
 }
-}
 
-@media (min-width: 1200px){
-    .list{
-    &--features{
-        @include grid-list(4, 30px);
+@media (min-width: 1200px) {
+  .list {
+    &--features {
+      @include grid-list(4, 30px);
     }
 
-    &--works{
-        @include grid-list(3, 30px);
+    &--works {
+      @include grid-list(3, 30px);
     }
 
-    &--team{
-        @include grid-list(4, 30px);
-        margin: 0 auto;
-        padding: 0 15px;
-        max-width: 1170px;
+    &--team {
+      @include grid-list(4, 30px);
+      margin: 0 auto;
+      padding: 0 15px;
+      max-width: 1170px;
     }
 
-    &--customers{
-        @include grid-list(6, 30px);
-    } 
-}
+    &--customers {
+      @include grid-list(6, 30px);
+    }
+  }
 }

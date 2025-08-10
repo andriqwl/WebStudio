@@ -1,36 +1,36 @@
-.post__wrap{
-    border-bottom: 1px solid rgb(241, 241, 241);
-    border-left: 1px solid rgb(241, 241, 241);
-    border-right: 1px solid rgb(241, 241, 241);
-    position: relative;
-    overflow: hidden;
+.post__wrap {
+  border-bottom: 1px solid rgb(241, 241, 241);
+  border-left: 1px solid rgb(241, 241, 241);
+  border-right: 1px solid rgb(241, 241, 241);
+  position: relative;
+  overflow: hidden;
 }
-.post:nth-child(-n+6){
-    margin-bottom: 0;
+.post:nth-child(-n + 6) {
+  margin-bottom: 0;
 }
-.post__text{
-    text-align: start;
-    padding-right: 24px;
-    padding-left: 24px;
+.post__text {
+  text-align: start;
+  padding-right: 24px;
+  padding-left: 24px;
 }
-.post__img{
-    display: block;
-    width: 100%;
+.post__img {
+  display: block;
+  width: 100%;
 }
-.post__title{
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: $text-color-base;
-    margin-top: 20px;
+.post__title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: $text-color-base;
+  margin-top: 20px;
 }
-.post__subtitle{
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    color: $caption-color;
-    margin-bottom: 20px;
+.post__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: $caption-color;
+  margin-bottom: 20px;
 }
-figure{
-    margin: 0;
+figure {
+  margin: 0;
 }

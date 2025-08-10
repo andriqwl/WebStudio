@@ -1,28 +1,26 @@
-.nav-wrap{
-    max-width: 100%;
-    padding-top: 94px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    justify-content: center;
-    gap: 8px;
+.nav-wrap {
+  max-width: 100%;
+  padding-top: 94px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  justify-content: center;
+  gap: 8px;
 }
-.nav-wrap__button{
-    background-color: $button;
-    height: 38px;
-    padding: 6px 22px 6px 22px;
-    border: none;
-    border-radius: 4px;
-    white-space: normal;
+.nav-wrap__button {
+  background-color: $button;
+  height: 38px;
+  padding: 6px 22px 6px 22px;
+  border: none;
+  border-radius: 4px;
+  white-space: normal;
 
-    @include transition (background-color, color, box-shadow);
+  @include transition(background-color, color, box-shadow);
 }
-.nav-wrap__button:hover{
-    background-color: $hover-color;
-    color: $background-color-primary;
-    cursor: pointer;
-    box-shadow: 
-        0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-        0px 1px 2px 0px rgba(0, 0, 0, 0.08),
-        0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+.nav-wrap__button:hover {
+  background-color: $hover-color;
+  color: $background-color-primary;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }

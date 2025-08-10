@@ -16,10 +16,11 @@
         <div class="container header__wrap">
             <a class="logo" href="#"><img src="src/img/logo-top.png" alt="WebStudio logo" /></a>
 
+            <button class="menu__label toggle-button" data-menu-toggle>
+                <span class="toggle-button__line"></span>
+            </button>
+
             <div class="menu" data-menu>
-                <button class="menu__label toggle-button" data-menu-toggle>
-                    <span class="toggle-button__line"></span>
-                </button>
                 <nav class="nav menu__nav">
                     <ul class="nav__list">
                         <li class="nav__item">
@@ -31,58 +32,34 @@
                         <li class="nav__item">
                             <a href="#" class="nav__link">Контакти</a>
                         </li>
-                        <li class="nav__item">
-                            <address class="address-burger">
-                                <a class="address-burger__tel" href="tel:+380961111111" data-menu-link>
-                                    +38 096 111 11 11
-                                </a>
-                                <a class="address-burger__email" href="mailto:info@webstudio.com">
-                                    info@webstudio.com
-                                </a>
-                            </address>
-                        </li>
-                        <li class="nav__item">
-                            <ul class="socials-burger">
-                                <li class="socials-burger__item">Instagram</li>
-                                <li class="socials-burger__item">Twitter</li>
-                                <li class="socials-burger__item">Facebook</li>
-                                <li class="socials-burger__item socials-burger__item--without">LinkedIn</li>
-                            </ul>
-                        </li>
                     </ul>
                 </nav>
-
+                <address class="address">
+                    <a class="address__contact address__contact--email" href="mailto:info@webstudio.com">
+                        <svg class="address__icon address__icon--email">
+                            <use href="src/img/sprites.svg#icon-gmail"></use>
+                        </svg>
+                        info@webstudio.com
+                    </a>
+                    <a class="address__contact address__contact--tel" href="tel:+380961111111">
+                        <svg class="address__icon address__icon--tel">
+                            <use href="src/img/sprites.svg#icon-phone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                    </address>
+                    <ul class="socials-burger">
+                        <li class="socials-burger__item">Instagram</li>
+                        <li class="socials-burger__item">Twitter</li>
+                        <li class="socials-burger__item">Facebook</li>
+                        <li class="socials-burger__item socials-burger__item--without">
+                            LinkedIn
+                        </li>
+                    </ul>        
             </div>
-
-            <nav class="navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <a class="navigation__link navigation__link--right" href="index.html">Студія</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="portfolio.html">Портфоліо</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="#">Контакти</a>
-                    </li>
-                </ul>
-            </nav>
-            <address class="address">
-                <a class="address__contact" href="mailto:info@webstudio.com">
-                    <svg class="address__icon address__icon--size">
-                        <use href="src/img/sprites.svg#icon-gmail"></use>
-                    </svg>
-                    info@webstudio.com
-                </a>
-                <a class="address__contact" href="tel:+380961111111">
-                    <svg class="address__icon">
-                        <use href="src/img/sprites.svg#icon-phone"></use>
-                    </svg>
-                    +38 096 111 11 11
-                </a>
-            </address>
         </div>
     </header>
+
     <main class="main">
         <section class="main-section">
             <!-- <div class="container main-section__wrap" data-aos="zoom-in-up" data-aos-duration="1500"> -->
@@ -180,9 +157,7 @@
         <section class="section section--works">
             <div class="container">
                 <!-- <h2 class="section__title" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"> -->
-                <h2 class="section__title">
-                    Чим ми займаємося
-                </h2>
+                <h2 class="section__title">Чим ми займаємося</h2>
                 <ul class="list list--works">
                     <!-- <li class="item" data-aos="fade-right" data-aos-duration="1200"> -->
                     <li class="item">
@@ -387,9 +362,7 @@
         <section class="section">
             <div class="container">
                 <!-- <h2 class="section__title" data-aos="fade-down" data-aos-duration="500"> -->
-                <h2 class="section__title">
-                    Постійні клієнти
-                </h2>
+                <h2 class="section__title">Постійні клієнти</h2>
                 <ul class="list list--customers">
                     <!-- <li class="item" data-aos="fade-down" data-aos-duration="1000"> -->
                     <li class="item">
@@ -489,7 +462,9 @@
                 </ul>
             </div>
             <div class="footer__center">
-                <h3 class="footer__text footer__text--start">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
+                <h3 class="footer__text footer__text--start">
+                    ПІДПИШІТЬСЯ НА РОЗСИЛКУ
+                </h3>
                 <form action="email__form">
                     <ul class="email__wrap">
                         <li class="footer__social">

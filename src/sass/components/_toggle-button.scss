@@ -6,6 +6,7 @@
   height: 20px;
   position: relative;
   z-index: 10;
+
   cursor: pointer;
   &::after,
   &::before {
@@ -30,43 +31,39 @@
   height: 3px;
   background-color: $text-color-base;
   transition-property: transform, top;
-  transition-duration: 0.1s;
+  transition-duration: 0.2s;
   transition-timing-function: linear;
-  
 }
-.toggle-button:hover
-.toggle-button__line {
-    background-color: $hover-color;
+.toggle-button:hover .toggle-button__line {
+  background-color: $hover-color;
 }
 
 .toggle-button:hover::before {
-    background-color: $hover-color;
+  background-color: $hover-color;
 }
-.toggle-button:hover::after{
-    background-color: $hover-color;
+.toggle-button:hover::after {
+  background-color: $hover-color;
 }
-
-
 
 .toggle-button.open {
-    .toggle-button__line{
-        transform-origin: left;
-        transform: scaleX(0);
-    }
-    &::before,
-    &::after
-    {
-        top: calc(50% - 1px);
-        
-    }
-    &::before{
-        transform: rotate(45deg);
-        
-    }
-    &::after{
-        transform: rotate(-45deg);
-        
-    }
+  .toggle-button__line {
+    transform-origin: center;
+    transform: scaleX(0);
+  }
+  &::before,
+  &::after {
+    top: calc(50% - 1px);
+  }
+  &::before {
+    transform: rotate(180deg);
+  }
+  &::after {
+    transform: rotate(-90deg);
+  }
 }
 
-
+@media (min-width: 768px) {
+  .toggle-button {
+    display: none;
+  }
+}

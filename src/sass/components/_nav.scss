@@ -1,12 +1,17 @@
 .nav__list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   align-items: center;
   list-style: none;
   display: flex;
   align-items: start;
   gap: 35px;
+  margin: 0;
+  padding-top: 48px;
+}
+
+.nav__item {
+  position: relative;
 }
 
 .nav__link {
@@ -18,5 +23,36 @@
 
 .nav__link:hover {
   color: $hover-color;
-  
+}
+
+@media (min-width: 768px) {
+  .nav__list {
+    flex-direction: row;
+    align-items: center;
+    gap: 56px;
+    padding: 0;
+    margin: 0;
+  }
+  .nav__item::after {
+    content: "";
+    height: 2px;
+    width: 60%;
+    background-color: $hover-color;
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    opacity: 0;
+    transform: translateX(0px);
+    transform-origin: left center;
+
+    @include transition(opacity, transform);
+  }
+
+  .nav__item:hover::after {
+    opacity: 1;
+    transform: scale(2) translateX(-2.5px);
+  }
+  .nav__link {
+    font-size: 14px;
+  }
 }
