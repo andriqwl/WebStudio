@@ -526,7 +526,7 @@ body {
 }
 .main-section {
   background-size: cover, cover;
-  background-position: center top;
+  background-position: center;
 }
 .main-section__wrap {
   display: flex;
@@ -538,15 +538,40 @@ body {
 }
 @media (min-resolution: 96dpi), (min-resolution: 1dppx) {
   .main-section {
-    background-image: url("../img/bg-gradient.png"), url("../img/bg-office.jpg");
+    background-image: url("../img/bg-gradient.png"), url("../img/bg-office-mobile.jpg");
   }
 }
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .main-section {
-    background-image: url("../img/bg-gradient.png"), url("../img/bg-office@2x.jpg");
+    background-image: url("../img/bg-gradient.png"), url("../img/bg-office-mobile@2x.jpg");
   }
 }
 
+@media (min-width: 768px) and (min-resolution: 96dpi), (min-width: 768px) and (min-resolution: 1dppx) {
+  .main-section {
+    background-image: url("../img/bg-gradient.png"), url("../img/bg-office-tablet.jpg");
+  }
+}
+@media (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
+  .main-section {
+    background-image: url("../img/bg-gradient.png"), url("../img/bg-office-tablet@2x.jpg");
+  }
+}
+@media (min-width: 1600px) {
+  .main-section {
+    background-position: center top;
+  }
+}
+@media (min-width: 1600px) and (min-resolution: 96dpi), (min-width: 1600px) and (min-resolution: 1dppx) {
+  .main-section {
+    background-image: url("../img/bg-gradient.png"), url("../img/bg-office-desktop.jpg");
+  }
+}
+@media (min-width: 1600px) and (min-resolution: 192dpi), (min-width: 1600px) and (min-resolution: 2dppx) {
+  .main-section {
+    background-image: url("../img/bg-gradient.png"), url("../img/bg-office-desktop@2x.jpg");
+  }
+}
 .main-section__text {
   color: white;
   font-size: 26px;
